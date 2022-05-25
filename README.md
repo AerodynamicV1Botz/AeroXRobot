@@ -1,6 +1,6 @@
 <div align="center">
 <img src="https://telegra.ph/file/f6962c56b06da5f471906.png" alt=""></div>
-# 𝓣𝓸𝓯𝓾
+## 𝓣𝓸𝓯𝓾
 <h3 align="center"> 
     A Modular Telegram Python Bot Running On Python3 With Mongo DB, Sqlalchemy, Redis Database.
 </h3>
