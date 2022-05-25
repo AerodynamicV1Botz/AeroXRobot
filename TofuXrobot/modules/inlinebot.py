@@ -55,21 +55,21 @@ def inlinequery(update: Update, _) -> None:
             "description": "Look up a person/bot/channel/chat on @Intellivoid SpamProtection API",
             "message_text": "Click the button below to look up a person/bot/channel/chat on @Intellivoid SpamProtection API using "
                             "username or telegram id",
-            "thumb_urL": "https://telegra.ph/file/e7bb5cf8dca5c2916128d.jpg",
+            "thumb_urL": "https://telegra.ph/file/b9d627f0dbce41b418997.png",
             "keyboard": ".spb ",
         },
         {
             "title": "Account info on Tofu",
             "description": "Look up a Telegram account in Tofu database",
             "message_text": "Click the button below to look up a person in Tofu database using their Telegram ID",
-            "thumb_urL": "https://telegra.ph/file/d687f2d9867d7edfa0506.jpg",
+            "thumb_urL": "https://telegra.ph/file/255cc572069ed392302db.png",
             "keyboard": ".info ",
         },
         {
             "title": "About",
             "description": "Know about Tofu",
             "message_text": "Click the button below to get to know about Tofu.",
-            "thumb_urL": "https://telegra.ph/file/99d8f926d6b99c6cb826c.jpg",
+            "thumb_urL": "https://telegra.ph/file/e96307987221f3ed3ce67.png",
             "keyboard": ".about ",
         },
         {
@@ -83,14 +83,14 @@ def inlinequery(update: Update, _) -> None:
             "title": "Anilist",
             "description": "Search anime and manga on AniList.co",
             "message_text": "Click the button below to search anime and manga on AniList.co",
-            "thumb_urL": "https://telegra.ph/file/561a53ed2800f4dccbe30.jpg",
+            "thumb_urL": "https://telegra.ph/file/f3ef286b7c32bde477eaa.png",
             "keyboard": ".anilist ",
         },
         {
             "title": "Paste",
             "description": "Paste <text> on pastebin.",
             "message_text": "Click the button below to Paste on pastebin.",
-            "thumb_urL": "https://telegra.ph/file/561a53ed2800f4dccbe30.jpg",
+            "thumb_urL": "https://telegra.phhttps://telegra.ph/file/0854b5bec6dcfe6efb26f.png",
             "keyboard": ".paste ",
         },
     ]
@@ -226,7 +226,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
     results = [
         InlineQueryResultArticle(
             id=str(uuid4()),
-            thumb_url="https://telegra.ph/file/d687f2d9867d7edfa0506.jpg",
+            thumb_url="https://telegra.ph/file/eea46a5394b9b69ed7104.png",
             title=f"User info of {html.escape(user.first_name)}",
             input_message_content=InputTextMessageContent(text, parse_mode=ParseMode.HTML,
                                                           disable_web_page_preview=True),
@@ -263,8 +263,8 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             id=str(uuid4()),
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/396d27f7cba3f83efceab.jpg",
-            photo_url="https://telegra.ph/file/55669ba6d3475e5d77e8d.jpg",
+            thumb_url="https://telegra.ph/file/4f29473f39ebcaff8b0c2.png",
+            photo_url="https://telegra.ph/file/104328acf2a74f8d79315.png",
             caption=about_text,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=kb,
@@ -346,7 +346,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
         InlineQueryResultArticle(
             id=str(uuid4()),
             title=f"SpamProtection API info of {srdata or a}",
-            thumb_url="https://telegra.ph/file/e7bb5cf8dca5c2916128d.jpg",
+            thumb_url="https://telegra.ph/file/504a889c95ae9146c2c5d.png",
             input_message_content=InputTextMessageContent(stats, parse_mode=ParseMode.MARKDOWN,
                                                           disable_web_page_preview=True),
             reply_markup=kb
@@ -526,8 +526,8 @@ def help(query: str, update: Update, context: CallbackContext) -> None:
         InlineQueryResultPhoto(
             id=str(uuid4()),
             title="Help Commands",
-            thumb_url="https://telegra.ph/file/65a47304643fcdb34f0a7.jpg",
-            photo_url="https://telegra.ph/file/65a47304643fcdb34f0a7.jpg",
+            thumb_url="https://telegra.ph/file/5cdcb0ab7cce33dcab930.png",
+            photo_url="https://telegra.ph/file/5cdcb0ab7cce33dcab930.png",
             caption=help_text,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=kb,

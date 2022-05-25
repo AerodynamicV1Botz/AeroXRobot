@@ -1,24 +1,24 @@
 PM_START_TEXT = """────「 [{}]({}) 」────\n*Hello {}!*\n*I'm An Anime Themed Advance Group Management Bot*\n\n❍ *Uptime:* `{}`\n❍ `{}` *Users, Across* `{}` *Chats*\n\n*Click The Help Button To Get List Of My Commands.*\nThanks To @TofuXrobot For Repo"""
 
 Tofu_IMG = (
-      "https://telegra.ph/file/3f06de01df5bc3c3cf343.jpg",
-      "https://telegra.ph//file/05311caed13176f7d35e5.jpg",
-      "https://telegra.ph//file/88976abda0d0af9d4a517.jpg",
-      "https://telegra.ph//file/b388f473ddfb9cc727bb1.jpg",
-      "https://telegra.ph//file/d950844dad2e473950470.jpg",
+      "https://telegra.ph/file/311f02e247556ab4f3269.png",
+      "https://telegra.ph/file/33d22afbd84d490f316ad.png",
+      "https://telegra.ph/file/c5dc1385eb26d032ede47.png",
+      "https://telegra.ph/file/0c0b3f875bf8adff8ca7f.png",
+      "https://telegra.ph/file/5ea53d6bf9f9538a032c7.png",
 )
 
-TEXXT = "<b>Yea</b> {} <b>I'm here for you, haven't slept since {}.</b>"
+TEXXT = "<b>Yea</b> {} <b>I'm here for you {}.</b>"
 
 Tofu_N_IMG = (
-      "https://telegra.ph/file/837c61d9c51236fea4100.jpg",
-      "https://telegra.ph/file/ee34cf0d7e4782424b777.jpg",
-      "https://telegra.ph/file/5410b02359a2cabc2776b.jpg",
-      "https://telegra.ph/file/b1fc3b2af759999bf3b35.jpg",
-      "https://telegra.ph/file/305b5b3c4527cd439b926.jpg"
+      "https://telegra.ph/file/ff34753202b78daf058b0.png",
+      "https://telegra.ph/file/c9dc65a6235bcf17fbd20.png",
+      "https://telegra.ph/file/2559552134d7b8b041f0f.png",
+      "https://telegra.ph/file/1e65a485ced4663eb9fd2.png",
+      "https://telegra.ph/file/f008a0da37a4ca2f65f89.png"
 
 )
 
-PM_PHOTO = "https://telegra.ph//file/3a88a958a88e83d85d284.jpg"
+PM_PHOTO = "https://telegra.ph/file/8cb01b0f95b827406a895.png"
 
-Tofu_DISPACHER_PIC = "https://telegra.ph//file/4ce99db6136c77248e0ec.jpg"
+Tofu_DISPACHER_PIC = "https://telegra.ph/file/28a37c2405c91e6f2659b.png"

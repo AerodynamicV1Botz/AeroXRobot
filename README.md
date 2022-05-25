@@ -1,5 +1,5 @@
-![Tofu](https://telegra.ph/file/bc219808c6d888fc72260.jpg)
-# 𝓜𝓲𝓴𝓾 𝓝𝓪𝓴𝓪𝓷𝓸
+![Tofu](https://telegra.ph/file/13e0d4b1256ddf3c8febe.png)
+# 𝓣𝓸𝓯𝓾
 <h3 align="center"> 
     A Modular Telegram Python Bot Running On Python3 With Mongo DB, Sqlalchemy, Redis Database.
 </h3>
@@ -29,7 +29,8 @@
 
 ╘══「 Can be found on telegram as [Tofu](https://t.me/TofuXrobot) 」
 
-![Tofu](https://telegra.ph/file/9d78988131658606a3d57.jpg)
+
+![Tofu](https://telegra.ph/file/eaea4dd33973037ff3bf6.png)
 
 ### ╒═══「 Creator Info/Credits 」
 

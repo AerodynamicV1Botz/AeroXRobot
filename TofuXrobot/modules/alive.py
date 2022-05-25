@@ -18,10 +18,10 @@ from pyrogram import __version__ as pyro
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/f1e9b94decb547cb45cab.jpg"
-file2 = "https://telegra.ph/file/c5b6c0a3a6832efc08e5b.jpg"
-file3 = "https://telegra.ph/file/1dbcdedfc78d0318a288b.jpg"
-file4 = "https://telegra.ph/file/ac522b519f77a1054e9e9.jpg"
+file1 = "https://telegra.ph/file/dbb4b4277d305749a0798.png"
+file2 = "https://telegra.ph/file/e264055da5e43d58f08e9.png"
+file3 = "https://telegra.ph/file/ad0b6b42d4f9cad1e0954.png"
+file4 = "https://telegra.ph/file/612e817351d4e8f8f4452.png"
 """ =======================CONSTANTS====================== """
 
 START_TIME = datetime.utcnow()
@@ -86,4 +86,4 @@ async def hmm(yes):
 async def repo(event):
     Tofu = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
     BUTTON = [[Button.url("[► Support ◄]", "https://t.me/tofu_support"), Button.url("[► Repo ◄]", "https://github.com/Awesome-Tofu/Tofu-Robot")]]
-    await borg.send_file(event.chat_id, file="https://telegra.ph/file/c5b6c0a3a6832efc08e5b.jpg", caption=Tofu, buttons=BUTTON)
+    await borg.send_file(event.chat_id, file="https://telegra.ph/file/f627bc499679927ba7a4e.png", caption=Tofu, buttons=BUTTON)
