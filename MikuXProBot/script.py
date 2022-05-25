@@ -1,6 +1,6 @@
-PM_START_TEXT = """────「 [{}]({}) 」────\n*Hello {}!*\n*I'm An Anime Themed Advance Group Management Bot*\n\n❍ *Uptime:* `{}`\n❍ `{}` *Users, Across* `{}` *Chats*\n\n*Click The Help Button To Get List Of My Commands.*\nThanks To @MikuXProBot For Repo"""
+PM_START_TEXT = """────「 [{}]({}) 」────\n*Hello {}!*\n*I'm An Anime Themed Advance Group Management Bot*\n\n❍ *Uptime:* `{}`\n❍ `{}` *Users, Across* `{}` *Chats*\n\n*Click The Help Button To Get List Of My Commands.*\nThanks To @TofuXrobot For Repo"""
 
-MIKU_IMG = (
+Tofu_IMG = (
       "https://telegra.ph/file/3f06de01df5bc3c3cf343.jpg",
       "https://telegra.ph//file/05311caed13176f7d35e5.jpg",
       "https://telegra.ph//file/88976abda0d0af9d4a517.jpg",
@@ -10,7 +10,7 @@ MIKU_IMG = (
 
 TEXXT = "<b>Yea</b> {} <b>I'm here for you, haven't slept since {}.</b>"
 
-MIKU_N_IMG = (
+Tofu_N_IMG = (
       "https://telegra.ph/file/837c61d9c51236fea4100.jpg",
       "https://telegra.ph/file/ee34cf0d7e4782424b777.jpg",
       "https://telegra.ph/file/5410b02359a2cabc2776b.jpg",
@@ -21,4 +21,4 @@ MIKU_N_IMG = (
 
 PM_PHOTO = "https://telegra.ph//file/3a88a958a88e83d85d284.jpg"
 
-MIKU_DISPACHER_PIC = "https://telegra.ph//file/4ce99db6136c77248e0ec.jpg"
+Tofu_DISPACHER_PIC = "https://telegra.ph//file/4ce99db6136c77248e0ec.jpg"

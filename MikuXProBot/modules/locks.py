@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import MikuXProBot.modules.sql.locks_sql as sql
-from MikuXProBot import dispatcher, DRAGONS, LOGGER
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.chat_status import (
+import TofuXrobot.modules.sql.locks_sql as sql
+from TofuXrobot import dispatcher, DRAGONS, LOGGER
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from MikuXProBot.modules.log_channel import loggable
-from MikuXProBot.modules.connection import connected
+from TofuXrobot.modules.log_channel import loggable
+from TofuXrobot.modules.connection import connected
 
-from MikuXProBot.modules.helper_funcs.alternate import send_message, typing_action
+from TofuXrobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 

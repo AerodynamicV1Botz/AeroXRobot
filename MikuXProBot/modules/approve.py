@@ -1,11 +1,11 @@
 import html
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot import dispatcher, DRAGONS
-from MikuXProBot.modules.helper_funcs.extraction import extract_user
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot import dispatcher, DRAGONS
+from TofuXrobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, run_async, CallbackQueryHandler
-import MikuXProBot.modules.sql.approve_sql as sql
-from MikuXProBot.modules.helper_funcs.chat_status import user_admin
-from MikuXProBot.modules.log_channel import loggable
+import TofuXrobot.modules.sql.approve_sql as sql
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin
+from TofuXrobot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest

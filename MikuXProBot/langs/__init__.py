@@ -1,4 +1,4 @@
-from MikuXProBot.langs.language import langs
+from TofuXrobot.langs.language import langs
 
 get_string = langs.get_string
 reload_strings = langs.reload_strings

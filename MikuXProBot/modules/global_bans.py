@@ -14,17 +14,17 @@ from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async, CallbackQueryHandler)
 from telegram.utils.helpers import mention_html
 
-import MikuXProBot.modules.sql.global_bans_sql as sql
-from MikuXProBot.modules.sql.users_sql import get_user_com_chats
-from MikuXProBot import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
+import TofuXrobot.modules.sql.global_bans_sql as sql
+from TofuXrobot.modules.sql.users_sql import get_user_com_chats
+from TofuXrobot import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
                           SUPPORT_CHAT, SPAMWATCH_SUPPORT_CHAT, DEMONS, TIGERS,
                           WOLVES, sw, dispatcher)
-from MikuXProBot.modules.helper_funcs.chat_status import (is_user_admin,
+from TofuXrobot.modules.helper_funcs.chat_status import (is_user_admin,
                                                            support_plus,
                                                            user_admin)
-from MikuXProBot.modules.helper_funcs.extraction import (extract_user,
+from TofuXrobot.modules.helper_funcs.extraction import (extract_user,
                                                           extract_user_and_text)
-from MikuXProBot.modules.helper_funcs.misc import send_to_list
+from TofuXrobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -205,7 +205,7 @@ def gban(update: Update, context: CallbackContext):
     [
                        InlineKeyboardButton(
                              text="Appeal chat 🏬",
-                             url="https://t.me/Mikussupport"),
+                             url="https://t.me/tofu_support"),
                     ], 
     ]
 
@@ -490,7 +490,7 @@ def check_and_ban(update, user_id, should_message=True):
     [
                        InlineKeyboardButton(
                              text="Appeal chat 🏬",
-                             url="https://t.me/Mikussupport"),
+                             url="https://t.me/tofu_support"),
                     ], 
     ]
             user = sql.get_gbanned_user(user_id)

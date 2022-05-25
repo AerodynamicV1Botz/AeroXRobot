@@ -13,23 +13,23 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from MikuXProBot import DRAGONS, LOGGER, dispatcher
-from MikuXProBot.modules.connection import connected
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.alternate import send_message, typing_action
-from MikuXProBot.modules.helper_funcs.chat_status import user_admin
-from MikuXProBot.modules.helper_funcs.extraction import extract_text
-from MikuXProBot.modules.helper_funcs.filters import CustomFilters
-from MikuXProBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from MikuXProBot.modules.helper_funcs.misc import build_keyboard_parser
-from MikuXProBot.modules.helper_funcs.msg_types import get_filter_type
-from MikuXProBot.modules.helper_funcs.string_handling import (
+from TofuXrobot import DRAGONS, LOGGER, dispatcher
+from TofuXrobot.modules.connection import connected
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.alternate import send_message, typing_action
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin
+from TofuXrobot.modules.helper_funcs.extraction import extract_text
+from TofuXrobot.modules.helper_funcs.filters import CustomFilters
+from TofuXrobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from TofuXrobot.modules.helper_funcs.misc import build_keyboard_parser
+from TofuXrobot.modules.helper_funcs.msg_types import get_filter_type
+from TofuXrobot.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
     split_quotes,
 )
-from MikuXProBot.modules.sql import cust_filters_sql as sql
+from TofuXrobot.modules.sql import cust_filters_sql as sql
 
 HANDLER_GROUP = 10
 

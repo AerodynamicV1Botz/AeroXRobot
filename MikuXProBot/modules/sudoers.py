@@ -7,9 +7,9 @@ import time
 import psutil
 from pyrogram import filters
 
-from MikuXProBot import (StartTime, DEV_USERS, pgram)
-import MikuXProBot.utils.formatter as formatter
-import MikuXProBot.modules.sql.users_sql as sql
+from TofuXrobot import (StartTime, DEV_USERS, pgram)
+import TofuXrobot.utils.formatter as formatter
+import TofuXrobot.modules.sql.users_sql as sql
 
 
 
@@ -25,7 +25,7 @@ async def bot_sys_stats():
     users = sql.num_users()
     chats = sql.num_chats()
     stats = f"""
-➢ Miku's Current System Stats
+➢ Tofu's Current System Stats
 
 ────────────────────────
 • UPTIME: {formatter.get_readable_time((bot_uptime))}

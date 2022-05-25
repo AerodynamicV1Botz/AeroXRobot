@@ -1,8 +1,8 @@
 import bs4
 import requests
 import re
-from MikuXProBot.events import register
-from MikuXProBot import telethn
+from TofuXrobot.events import register
+from TofuXrobot import telethn
 from telethon import types
 from telethon.tl import functions
 

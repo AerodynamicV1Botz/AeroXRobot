@@ -1,8 +1,8 @@
 import os
 import cv2
 from PIL import Image
-from MikuXProBot.events import register
-from MikuXProBot import telethn as tbot
+from TofuXrobot.events import register
+from TofuXrobot import telethn as tbot
 
 
 @register(pattern="^/tiny ?(.*)")
@@ -13,7 +13,7 @@ async def _(event):
            return
     kontol = await event.reply("`Processing tiny...`")
     ik = await tbot.download_media(reply)
-    im1 = Image.open("MikuXProBot/resources/ken.png")
+    im1 = Image.open("TofuXrobot/resources/ken.png")
     if ik.endswith(".tgs"):
         await tbot.download_media(reply, "ken.tgs")
         os.system("lottie_convert.py ken.tgs json.json")

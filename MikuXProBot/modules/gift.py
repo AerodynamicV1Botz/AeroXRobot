@@ -1,16 +1,16 @@
-from MikuXProBot import telethn as tbot
-from MikuXProBot.events import register
+from TofuXrobot import telethn as tbot
+from TofuXrobot.events import register
 import os
 import asyncio
 import os
 import time
 
 from datetime import datetime
-from MikuXProBot import OWNER_ID, DEV_USERS
-from MikuXProBot import TEMP_DOWNLOAD_DIRECTORY as path
-from MikuXProBot import TEMP_DOWNLOAD_DIRECTORY
+from TofuXrobot import OWNER_ID, DEV_USERS
+from TofuXrobot import TEMP_DOWNLOAD_DIRECTORY as path
+from TofuXrobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './MikuXProBot/imagefiles/IMG_20211114_164239_236.jpg'
+water = './TofuXrobot/imagefiles/IMG_20211114_164239_236.jpg'
 client = tbot
 
 @register(pattern=r"^/gift ?(.*)")
@@ -22,7 +22,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./MikuXProBot/modules/{}.py".format(input_str)
+    the_plugin_file = "./TofuXrobot/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(

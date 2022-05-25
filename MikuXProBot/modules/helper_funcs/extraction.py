@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from MikuXProBot import LOGGER
-from MikuXProBot.modules.users import get_user_id
+from TofuXrobot import LOGGER
+from TofuXrobot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 

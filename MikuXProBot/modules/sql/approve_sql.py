@@ -1,6 +1,6 @@
 import threading
 from sqlalchemy import Column, String, UnicodeText, func, distinct
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot.modules.sql import BASE, SESSION
 from sqlalchemy.sql.sqltypes import BigInteger
 
 class Approvals(BASE):

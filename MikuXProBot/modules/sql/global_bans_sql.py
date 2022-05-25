@@ -1,5 +1,5 @@
 import threading
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
 

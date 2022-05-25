@@ -3,7 +3,7 @@ from  uuid  import  uuid4
 from math import ceil
 from typing import Dict, List
 
-from MikuXProBot import NO_LOAD
+from TofuXrobot import NO_LOAD
 from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, InlineQueryResultArticle, InputTextMessageContent
 from telegram.error import TelegramError
 
@@ -61,8 +61,8 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
     else:
         pairs += [[
             (EqInlineKeyboardButton("Try inline", switch_inline_query_current_chat="",)),
-                EqInlineKeyboardButton("Back", callback_data="miku_back"),
-             EqInlineKeyboardButton("Support", url="t.me/Mikussupport")]]
+                EqInlineKeyboardButton("Back", callback_data="Tofu_back"),
+             EqInlineKeyboardButton("Support", url="t.me/tofu_support")]]
 
     return pairs
 

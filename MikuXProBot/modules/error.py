@@ -11,7 +11,7 @@ import requests
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import CallbackContext, CommandHandler
 
-from MikuXProBot import dispatcher, DEV_USERS, ERROR_LOGS
+from TofuXrobot import dispatcher, DEV_USERS, ERROR_LOGS
 
 pretty_errors.mono()
 

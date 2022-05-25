@@ -1,6 +1,6 @@
-from MikuXProBot.modules.helper_funcs.chat_status import user_admin
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot import dispatcher
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update

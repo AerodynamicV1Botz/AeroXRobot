@@ -16,10 +16,10 @@ from telegram.utils.helpers import mention_html
 from typing import Optional, List
 from telegram import TelegramError
 
-import MikuXProBot.modules.sql.users_sql as sql
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.filters import CustomFilters
-from MikuXProBot import (
+import TofuXrobot.modules.sql.users_sql as sql
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.filters import CustomFilters
+from TofuXrobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -29,7 +29,7 @@ from MikuXProBot import (
     WOLVES,
     dispatcher,
 )
-from MikuXProBot.modules.helper_funcs.chat_status import (
+from TofuXrobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     bot_admin,
     can_restrict,
@@ -42,9 +42,9 @@ from MikuXProBot.modules.helper_funcs.chat_status import (
     can_delete,
     dev_plus,
 )
-from MikuXProBot.modules.helper_funcs.extraction import extract_user_and_text
-from MikuXProBot.modules.helper_funcs.string_handling import extract_time
-from MikuXProBot.modules.log_channel import gloggable, loggable
+from TofuXrobot.modules.helper_funcs.extraction import extract_user_and_text
+from TofuXrobot.modules.helper_funcs.string_handling import extract_time
+from TofuXrobot.modules.log_channel import gloggable, loggable
 
 
 

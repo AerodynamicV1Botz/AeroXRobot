@@ -4,7 +4,7 @@ import traceback
 
 from sqlalchemy.sql.sqltypes import BigInteger
 
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot.modules.sql import BASE, SESSION
 
 from sqlalchemy import Column, String
 

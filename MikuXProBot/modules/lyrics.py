@@ -5,9 +5,9 @@ from tswift import Song
 from telegram import Bot, Update, Message, Chat
 from telegram.ext import CallbackContext, run_async
 
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.alternate import typing_action
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.alternate import typing_action
 
 
 @run_async

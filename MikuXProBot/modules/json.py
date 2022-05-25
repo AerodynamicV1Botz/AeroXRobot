@@ -6,8 +6,8 @@ from telethon import types
 from telethon.tl import functions, types
 
 
-from MikuXProBot.events import register
-from MikuXProBot import telethn
+from TofuXrobot.events import register
+from TofuXrobot import telethn
 
 
 async def is_register_admin(chat, user):

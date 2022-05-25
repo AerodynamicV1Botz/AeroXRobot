@@ -6,8 +6,8 @@ from telegram.ext import CallbackContext
 from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
-from MikuXProBot import DEV_USERS, DRAGONS, dispatcher
-from MikuXProBot.modules.helper_funcs.decorators import mikucallback
+from TofuXrobot import DEV_USERS, DRAGONS, dispatcher
+from TofuXrobot.modules.helper_funcs.decorators import Tofucallback
 
 
 class AdminPerms(Enum):
@@ -61,7 +61,7 @@ def user_admin(permission: AdminPerms):
     return wrapper
 
 
-@mikucallback(pattern="anoncb")
+@Tofucallback(pattern="anoncb")
 def anon_callback_handler1(upd: Update, _: CallbackContext):
     callback = upd.callback_query
     perm = callback.data.split('/')[3]

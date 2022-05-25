@@ -11,19 +11,19 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, DispatcherHandlerStop, MessageHandler, Filters, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
 
-from MikuXProBot import dispatcher, BAN_STICKER
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.chat_status import is_user_admin, bot_admin, user_admin_no_reply, user_admin, \
+from TofuXrobot import dispatcher, BAN_STICKER
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.chat_status import is_user_admin, bot_admin, user_admin_no_reply, user_admin, \
     can_restrict, user_can_change, user_can_ban
-from MikuXProBot.modules.helper_funcs.extraction import extract_text, extract_user_and_text, extract_user
-from MikuXProBot.modules.helper_funcs.filters import CustomFilters
-from MikuXProBot.modules.helper_funcs.misc import split_message
-from MikuXProBot.modules.helper_funcs.string_handling import split_quotes
-from MikuXProBot.modules.log_channel import loggable
-from MikuXProBot.modules.rules import send_rules
-from MikuXProBot.modules.sql import warns_sql as sql
-import MikuXProBot.modules.sql.rules_sql as rules_sql
-from MikuXProBot.modules.sql.approve_sql import is_approved
+from TofuXrobot.modules.helper_funcs.extraction import extract_text, extract_user_and_text, extract_user
+from TofuXrobot.modules.helper_funcs.filters import CustomFilters
+from TofuXrobot.modules.helper_funcs.misc import split_message
+from TofuXrobot.modules.helper_funcs.string_handling import split_quotes
+from TofuXrobot.modules.log_channel import loggable
+from TofuXrobot.modules.rules import send_rules
+from TofuXrobot.modules.sql import warns_sql as sql
+import TofuXrobot.modules.sql.rules_sql as rules_sql
+from TofuXrobot.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"

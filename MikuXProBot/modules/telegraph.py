@@ -1,14 +1,14 @@
-from MikuXProBot.events import register
-from MikuXProBot import telethn as tbot
+from TofuXrobot.events import register
+from TofuXrobot import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events, Button, custom
 import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-miku = "MIKU"
+Tofu = "Tofu"
 telegraph = Telegraph()
-r = telegraph.create_account(short_name=miku)
+r = telegraph.create_account(short_name=Tofu)
 auth_url = r["auth_url"]
 
 

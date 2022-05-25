@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from MikuXProBot.modules.helper_funcs.msg_types import Types
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot.modules.helper_funcs.msg_types import Types
+from TofuXrobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"

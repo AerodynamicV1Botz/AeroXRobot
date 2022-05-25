@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from MikuXProBot import telethn
-from MikuXProBot.modules.helper_funcs.telethn.chatstatus import (
+from TofuXrobot import telethn
+from TofuXrobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )

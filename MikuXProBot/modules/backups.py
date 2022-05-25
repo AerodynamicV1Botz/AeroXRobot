@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import MikuXProBot.modules.sql.notes_sql as sql
-from MikuXProBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
-from MikuXProBot.__main__ import DATA_IMPORT
-from MikuXProBot.modules.helper_funcs.chat_status import user_admin
-from MikuXProBot.modules.helper_funcs.alternate import typing_action
+import TofuXrobot.modules.sql.notes_sql as sql
+from TofuXrobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
+from TofuXrobot.__main__ import DATA_IMPORT
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin
+from TofuXrobot.modules.helper_funcs.alternate import typing_action
 
 # from NekoRobot.modules.rules import get_rules
-import MikuXProBot.modules.sql.rules_sql as rulessql
+import TofuXrobot.modules.sql.rules_sql as rulessql
 
 # from NekoRobot.modules.sql import warns_sql as warnssql
-import MikuXProBot.modules.sql.blacklist_sql as blacklistsql
-from MikuXProBot.modules.sql import disable_sql as disabledsql
+import TofuXrobot.modules.sql.blacklist_sql as blacklistsql
+from TofuXrobot.modules.sql import disable_sql as disabledsql
 
 # from NekoRobot.modules.sql import cust_filters_sql as filtersql
 # import NekoRobot.modules.sql.welcome_sql as welcsql
-import MikuXProBot.modules.sql.locks_sql as locksql
-from MikuXProBot.modules.connection import connected
+import TofuXrobot.modules.sql.locks_sql as locksql
+from TofuXrobot.modules.connection import connected
 
 
 @run_async
@@ -318,7 +318,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    f = open("Miku {}.backup".format(chat_id), "w")
+    f = open("Tofu {}.backup".format(chat_id), "w")
     f.write(str(baccinfo))
     f.close()
     context.bot.sendChatAction(current_chat_id, "upload_document")
@@ -334,14 +334,14 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("Miku {}.backup".format(chat_id), "rb"),
-        caption="*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Miku -Backup` was specially made for notes."
+        document=open("Tofu {}.backup".format(chat_id), "rb"),
+        caption="*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Tofu -Backup` was specially made for notes."
         .format(chat.title, chat_id, tgl),
         timeout=360,
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("Miku {}.backup".format(chat_id))  # Cleaning file
+    os.remove("Tofu {}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data

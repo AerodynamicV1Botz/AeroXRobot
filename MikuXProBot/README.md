@@ -1,27 +1,27 @@
 # Clients
 ## Importing Pyrogram
 ```python3
-from MikuXProBot import pgram
+from TofuXrobot import pgram
 ```
 ## Importing Telethon
 ```python3
-from MikuXProBot import telethn
+from TofuXrobot import telethn
 ```
 ## Importing ARQ
 ```python3
-from MikuXProBot import arq
+from TofuXrobot import arq
 ```
 
 # DataBase
 ## Importing MongoDB
 ```python3
-from MikuXProBot import mongo_client
+from TofuXrobot import mongo_client
 ```
 ## Importing Postgres
 ```python3
-from MikuXProBot.modules.sql import SESSION
+from TofuXrobot.modules.sql import SESSION
 ```
 ## Importing Redis
 ```python3
-from MikuXProBot import REDIS
+from TofuXrobot import REDIS
 ```

@@ -4,12 +4,12 @@ import random
 from telegram import Update, MessageEntity
 from telegram.ext import Filters, CallbackContext
 from telegram.error import BadRequest
-from MikuXProBot.modules.sql import afk_sql as sql
-from MikuXProBot.modules.users import get_user_id
-from MikuXProBot.modules.helper_funcs.decorators import mikucmd, mikumsg
+from TofuXrobot.modules.sql import afk_sql as sql
+from TofuXrobot.modules.users import get_user_id
+from TofuXrobot.modules.helper_funcs.decorators import Tofucmd, Tofumsg
 
-@mikumsg(Filters.regex("(?i)^brb"), friendly="afk", group=3)
-@mikucmd(command="afk", group=3)
+@Tofumsg(Filters.regex("(?i)^brb"), friendly="afk", group=3)
+@Tofucmd(command="afk", group=3)
 def afk(update: Update, context: CallbackContext):
     args = update.effective_message.text.split(None, 1)
     user = update.effective_user
@@ -36,7 +36,7 @@ def afk(update: Update, context: CallbackContext):
     except BadRequest:
         pass
 
-@mikumsg((Filters.all & Filters.chat_type.groups), friendly='afk', group=1)
+@Tofumsg((Filters.all & Filters.chat_type.groups), friendly='afk', group=1)
 def no_longer_afk(update: Update, context: CallbackContext):
     user = update.effective_user
     message = update.effective_message
@@ -67,7 +67,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
         except:
             return
 
-@mikumsg((Filters.entity(MessageEntity.MENTION) | Filters.entity(MessageEntity.TEXT_MENTION) & Filters.chat_type.groups), friendly='afk', group=8)
+@Tofumsg((Filters.entity(MessageEntity.MENTION) | Filters.entity(MessageEntity.TEXT_MENTION) & Filters.chat_type.groups), friendly='afk', group=8)
 def reply_afk(update: Update, context: CallbackContext):
     bot = context.bot
     message = update.effective_message

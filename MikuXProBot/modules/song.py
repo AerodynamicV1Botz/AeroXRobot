@@ -6,11 +6,11 @@ import wget
 
 from pyrogram import filters
 
-from MikuXProBot import pgram
-from MikuXProBot.utils.saavnhelp import get_arg
+from TofuXrobot import pgram
+from TofuXrobot.utils.saavnhelp import get_arg
 
 
-@pgram.on_message(filters.command("saavn", f"saavn@mikuxprobot"))
+@pgram.on_message(filters.command("saavn", f"saavn@TofuXrobot"))
 async def song(client, message):
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):

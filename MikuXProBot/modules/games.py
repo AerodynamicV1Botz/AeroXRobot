@@ -6,11 +6,11 @@ from telegram import ParseMode, Update, ChatPermissions
 from telegram.ext import CallbackContext, run_async
 from telegram.error import BadRequest
 
-import MikuXProBot.modules.game_strings as game_strings
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.chat_status import (is_user_admin)
-from MikuXProBot.modules.helper_funcs.extraction import extract_user
+import TofuXrobot.modules.game_strings as game_strings
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.chat_status import (is_user_admin)
+from TofuXrobot.modules.helper_funcs.extraction import extract_user
 
 
 @run_async

@@ -1,9 +1,9 @@
 
 import aiohttp
 from pyrogram import filters
-from MikuXProBot import pgram as miku
+from TofuXrobot import pgram as Tofu
 
-@miku.on_message(filters.command('pokedex'))
+@Tofu.on_message(filters.command('pokedex'))
 async def PokeDex(_, message):
     if len(message.command) != 2:
         await message.reply_text("/pokedex Pokemon Name")

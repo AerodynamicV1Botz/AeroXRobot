@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from MikuXProBot import LOGGER, dispatcher
-from MikuXProBot.modules.disable import DisableAbleMessageHandler
-from MikuXProBot.modules.helper_funcs.regex_helper import (infinite_loop_check)
+from TofuXrobot import LOGGER, dispatcher
+from TofuXrobot.modules.disable import DisableAbleMessageHandler
+from TofuXrobot.modules.helper_funcs.regex_helper import (infinite_loop_check)
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 

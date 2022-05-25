@@ -1,5 +1,5 @@
 import requests
-from MikuXProBot import CASH_API_KEY, dispatcher
+from TofuXrobot import CASH_API_KEY, dispatcher
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext, CommandHandler, run_async
 

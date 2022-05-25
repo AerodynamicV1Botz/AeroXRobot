@@ -2,9 +2,9 @@ import html
 import re
 
 from feedparser import parse
-from MikuXProBot import dispatcher, updater
-from MikuXProBot.modules.helper_funcs.chat_status import user_admin
-from MikuXProBot.modules.sql import rss_sql as sql
+from TofuXrobot import dispatcher, updater
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin
+from TofuXrobot.modules.sql import rss_sql as sql
 from telegram import ParseMode, Update, constants
 from telegram.ext import CallbackContext, CommandHandler
 

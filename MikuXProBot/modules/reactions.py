@@ -1,7 +1,7 @@
 import random
 
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 

@@ -3,7 +3,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open('{}/MikuXProBot/{}'.format(os.getcwd(), config),
+    with open('{}/TofuXrobot/{}'.format(os.getcwd(), config),
               'r') as json_file:
         return json.load(json_file)[key]
 
@@ -19,7 +19,7 @@ class Config(object):
     TOKEN = "awoo"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 769830161 # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "awoo"
-    SUPPORT_CHAT = 'mikussupport'  #Your own group for support, do not add the @
+    SUPPORT_CHAT = 'tofu_support'  #Your own group for support, do not add the @
     JOIN_LOGGER = -123456789  #Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = -123446789  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 

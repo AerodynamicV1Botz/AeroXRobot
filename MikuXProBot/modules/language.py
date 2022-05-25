@@ -4,10 +4,10 @@ from collections.abc import Iterable
 from telegram.ext import CommandHandler, CallbackQueryHandler
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 
-from MikuXProBot import dispatcher
-import MikuXProBot.modules.sql.language_sql as sql
-from MikuXProBot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from MikuXProBot.langs import get_string, get_languages, get_language
+from TofuXrobot import dispatcher
+import TofuXrobot.modules.sql.language_sql as sql
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from TofuXrobot.langs import get_string, get_languages, get_language
 
 
 

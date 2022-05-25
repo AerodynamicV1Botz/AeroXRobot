@@ -4,7 +4,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from MikuXProBot import (
+from TofuXrobot import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
@@ -179,7 +179,7 @@ def stats_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Miku stats is just for Dev User",
+                "Tofu stats is just for Dev User",
             )
 
     return is_sudo_plus_func
@@ -449,6 +449,6 @@ def user_can_change(func):
 
     return info_changer
 
-from MikuXProBot.modules import connection
+from TofuXrobot.modules import connection
 
 connected = connection.connected

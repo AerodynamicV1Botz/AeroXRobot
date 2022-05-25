@@ -24,7 +24,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
     
-from MikuXProBot import (
+from TofuXrobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -37,18 +37,18 @@ from MikuXProBot import (
     StartTime,
     SUPPORT_CHAT
 )
-from MikuXProBot.__main__ import STATS, TOKEN, USER_INFO
-from MikuXProBot.modules.sql import SESSION
-import MikuXProBot.modules.sql.userinfo_sql as sql
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.sql.global_bans_sql import is_user_gbanned
-from MikuXProBot.modules.sql.afk_sql import is_afk, check_afk_status
-from MikuXProBot.modules.sql.users_sql import get_user_num_chats
-from MikuXProBot.modules.helper_funcs.chat_status import sudo_plus
-from MikuXProBot.modules.helper_funcs.extraction import extract_user
-from MikuXProBot import telethn
+from TofuXrobot.__main__ import STATS, TOKEN, USER_INFO
+from TofuXrobot.modules.sql import SESSION
+import TofuXrobot.modules.sql.userinfo_sql as sql
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.sql.global_bans_sql import is_user_gbanned
+from TofuXrobot.modules.sql.afk_sql import is_afk, check_afk_status
+from TofuXrobot.modules.sql.users_sql import get_user_num_chats
+from TofuXrobot.modules.helper_funcs.chat_status import sudo_plus
+from TofuXrobot.modules.helper_funcs.extraction import extract_user
+from TofuXrobot import telethn
 
-MIKU_IMG = "https://telegra.ph/file/e3be4035a03c7ecb6b24e.jpg"
+Tofu_IMG = "https://telegra.ph/file/e3be4035a03c7ecb6b24e.jpg"
 
 def no_by_per(totalhp, percentage):
     """
@@ -240,10 +240,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/MikuXproBot?start=health"),
+                             url="https://t.me/TofuXrobot?start=health"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/MikuXproBot?start=disasters"),
+                             url="https://t.me/TofuXrobot?start=disasters"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -464,19 +464,19 @@ def stats(update, context):
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
         update.effective_message.reply_photo(
-            MIKU_IMG,
+            Tofu_IMG,
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/MikuXUpdates)\n\n"
-            + "\n╘══「 by [卄σ∂αкα](https://t.me/h0daka) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/TofuXUpdates)\n\n"
+            + "\n╘══「 by [卄σ∂αкα](https://t.me/awesome_tofu) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
                              text="Repo",
-                             url="github.com/H0daka/Miku-Nakano")
+                             url="github.com/awesome_tofu/Tofu-Robot")
                      ] 
                 ]
             ),
@@ -489,9 +489,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/MikuXUpdates)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/TofuXUpdates)\n\n"
                 )
-                + "╘══「 by [卄σ∂αкα](https://t.me/h0daka) 」\n"
+                + "╘══「 by [卄σ∂αкα](https://t.me/awesome_tofu) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -499,7 +499,7 @@ def stats(update, context):
                   [                  
                        InlineKeyboardButton(
                              text="Repo",
-                             url="github.com/H0daka/Miku-Nakano")
+                             url="github.com/awesome_tofu/Tofu-Robot")
                      ] 
                 ]
             ),

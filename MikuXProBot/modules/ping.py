@@ -5,7 +5,7 @@ import re
 import os
 import asyncio
 from typing import List
-from MikuXProBot.modules.sudoers import bot_sys_stats
+from TofuXrobot.modules.sudoers import bot_sys_stats
 
 import requests
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
@@ -18,9 +18,9 @@ from telegram.ext import (
     MessageHandler,
 )
 
-from MikuXProBot import StartTime, dispatcher, pgram
+from TofuXrobot import StartTime, dispatcher, pgram
 from pyrogram import filters
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
@@ -147,7 +147,7 @@ dispatcher.add_handler(PINGALL_HANDLER)
 
 
 __help__ = """
-/ping: Miku pong
+/ping: Tofu pong
 """
 
 __mod_name__ = "ping⚡"

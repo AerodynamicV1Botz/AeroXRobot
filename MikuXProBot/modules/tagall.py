@@ -1,7 +1,7 @@
 from pyrogram import filters
 
-from MikuXProBot.utils.pluginhelpers import admins_only, get_text
-from MikuXProBot import pgram
+from TofuXrobot.utils.pluginhelpers import admins_only, get_text
+from TofuXrobot import pgram
 
 
 @pgram.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)

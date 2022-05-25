@@ -2,11 +2,11 @@ import html
 import random
 import time
 
-import MikuXProBot.modules.fun_strings as fun_strings
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.chat_status import is_user_admin
-from MikuXProBot.modules.helper_funcs.extraction import extract_user
+import TofuXrobot.modules.fun_strings as fun_strings
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.chat_status import is_user_admin
+from TofuXrobot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
@@ -63,7 +63,7 @@ def slap(update: Update, context: CallbackContext):
     user_id = extract_user(message, args)
 
     if user_id == bot.id:
-        temp = random.choice(fun_strings.SLAP_MIKU_TEMPLATES)
+        temp = random.choice(fun_strings.SLAP_Tofu_TEMPLATES)
 
         if isinstance(temp, list):
             if temp[2] == "tmute":

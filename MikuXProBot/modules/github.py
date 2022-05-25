@@ -1,13 +1,13 @@
 import aiohttp
 from pyrogram import filters
-from MikuXProBot import pgram as pbot
-from MikuXProBot.utils.errors import capture_err
+from TofuXrobot import pgram as pbot
+from TofuXrobot.utils.errors import capture_err
 
 
 __mod_name__ = "Github"
 
 
-@pbot.on_message(filters.command(["github", "git", f"git@MikuXProBot"]))
+@pbot.on_message(filters.command(["github", "git", f"git@TofuXrobot"]))
 @capture_err
 async def github(_, message):
     if len(message.command) != 2:

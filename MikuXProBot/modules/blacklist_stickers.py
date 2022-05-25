@@ -1,18 +1,18 @@
 import html
 from typing import Optional
 
-import MikuXProBot.modules.sql.blsticker_sql as sql
-from MikuXProBot import LOGGER, dispatcher
-from MikuXProBot.modules.connection import connected
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.alternate import send_message
-from MikuXProBot.modules.helper_funcs.chat_status import (user_admin,
+import TofuXrobot.modules.sql.blsticker_sql as sql
+from TofuXrobot import LOGGER, dispatcher
+from TofuXrobot.modules.connection import connected
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.alternate import send_message
+from TofuXrobot.modules.helper_funcs.chat_status import (user_admin,
                                                            user_not_admin)
-from MikuXProBot.modules.helper_funcs.misc import split_message
-from MikuXProBot.modules.helper_funcs.string_handling import extract_time
+from TofuXrobot.modules.helper_funcs.misc import split_message
+from TofuXrobot.modules.helper_funcs.string_handling import extract_time
 
-from MikuXProBot.modules.log_channel import loggable
-from MikuXProBot.modules.warns import warn
+from TofuXrobot.modules.log_channel import loggable
+from TofuXrobot.modules.warns import warn
 from telegram import (Chat, Message, ParseMode, Update, User, ChatPermissions)
 from telegram.error import BadRequest
 from telegram.ext import (CallbackContext, CommandHandler, Filters,

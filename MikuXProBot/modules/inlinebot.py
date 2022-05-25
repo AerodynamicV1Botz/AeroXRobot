@@ -19,8 +19,8 @@ from telegram.error import BadRequest
 from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
                           Filters, MessageHandler)
 from telegram.utils.helpers import mention_html
-import MikuXProBot.modules.sql.users_sql as sql
-from MikuXProBot import (
+import TofuXrobot.modules.sql.users_sql as sql
+from TofuXrobot import (
     OWNER_ID,
     DRAGONS,
     DEMONS,
@@ -30,9 +30,9 @@ from MikuXProBot import (
     pgram,
     sw, LOGGER
 )
-from MikuXProBot.modules.helper_funcs.misc import article
-from MikuXProBot.modules.helper_funcs.decorators import mikuinline
-from MikuXProBot.modules.sudoers import bot_sys_stats as bss
+from TofuXrobot.modules.helper_funcs.misc import article
+from TofuXrobot.modules.helper_funcs.decorators import Tofuinline
+from TofuXrobot.modules.sudoers import bot_sys_stats as bss
 
 
 def remove_prefix(text, prefix):
@@ -40,7 +40,7 @@ def remove_prefix(text, prefix):
         text = text.replace(prefix, "", 1)
     return text
 
-@mikuinline()
+@Tofuinline()
 def inlinequery(update: Update, _) -> None:
     """
     Main InlineQueryHandler callback.
@@ -59,16 +59,16 @@ def inlinequery(update: Update, _) -> None:
             "keyboard": ".spb ",
         },
         {
-            "title": "Account info on Miku",
-            "description": "Look up a Telegram account in Miku database",
-            "message_text": "Click the button below to look up a person in Miku database using their Telegram ID",
+            "title": "Account info on Tofu",
+            "description": "Look up a Telegram account in Tofu database",
+            "message_text": "Click the button below to look up a person in Tofu database using their Telegram ID",
             "thumb_urL": "https://telegra.ph/file/d687f2d9867d7edfa0506.jpg",
             "keyboard": ".info ",
         },
         {
             "title": "About",
-            "description": "Know about Miku",
-            "message_text": "Click the button below to get to know about Miku.",
+            "description": "Know about Tofu",
+            "message_text": "Click the button below to get to know about Tofu.",
             "thumb_urL": "https://telegra.ph/file/99d8f926d6b99c6cb826c.jpg",
             "keyboard": ".about ",
         },
@@ -172,7 +172,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         text += f"\n\nThis person is my owner"
         nation_level_present = True
     elif user.id in DEV_USERS:
-        text += f"\n\nThis Person is a part Developer of Miku"
+        text += f"\n\nThis Person is a part Developer of Tofu"
         nation_level_present = True
     elif user.id in DRAGONS:
         text += f"\n\nThe Nation level of this person is Royal"
@@ -212,7 +212,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/MikusSupport",
+                    url=f"https://t.me/tofu_support",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -244,7 +244,7 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
     user = context.bot.get_chat(user_id)
     sql.update_user(user.id, user.username)
     about_text = f"""
-    [Miku ❤️](https://t.me/MikuXproBot)\n*Bot State:* `Alive`\n*Python:* `{python_version()}`\n*Pyrogram:* `{pyrover}`\n*Platform:* `{sys.platform}`\n*python-telegram-bot:* `v{str(__version__)}`
+    [Tofu ❤️](https://t.me/TofuXrobot)\n*Bot State:* `Alive`\n*Python:* `{python_version()}`\n*Pyrogram:* `{pyrover}`\n*Platform:* `{sys.platform}`\n*python-telegram-bot:* `v{str(__version__)}`
     """
     results: list = []
     kb = InlineKeyboardMarkup(
@@ -331,7 +331,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/MikusSupport",
+                    url=f"https://t.me/tofu_support",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -476,7 +476,7 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     InlineKeyboardButton(
                         text="Report error",
-                        url="https://t.me/MikusSupport",
+                        url="https://t.me/tofu_support",
                     ),
                     InlineKeyboardButton(
                         text="Search again",
@@ -508,7 +508,7 @@ def help(query: str, update: Update, context: CallbackContext) -> None:
     user = context.bot.get_chat(user_id)
     sql.update_user(user.id, user.username)
     help_text = f"""
-    [Miku Inline Help❤️](https://t.me/MikuXproBot)\n*Inline Help Commands:*\n*• .about:* `You Can Check My Information`\n*• .spbinfo* `To Check Your Spam Protection With Spam Protection Api`\n*• .anilist:* `To Search Animes And Mangas`\n*• .info:* `To Check Your Information`
+    [Tofu Inline Help❤️](https://t.me/TofuXrobot)\n*Inline Help Commands:*\n*• .about:* `You Can Check My Information`\n*• .spbinfo* `To Check Your Spam Protection With Spam Protection Api`\n*• .anilist:* `To Search Animes And Mangas`\n*• .info:* `To Check Your Information`
     """
     results: list = []
     kb = InlineKeyboardMarkup(

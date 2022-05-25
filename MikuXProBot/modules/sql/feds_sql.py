@@ -1,7 +1,7 @@
 import ast
 import threading
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText, Integer
 from telegram.error import BadRequest, Unauthorized
 from sqlalchemy.sql.sqltypes import BigInteger

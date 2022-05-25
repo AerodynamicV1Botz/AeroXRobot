@@ -4,14 +4,14 @@ from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 
-from MikuXProBot.modules.log_channel import loggable
-from MikuXProBot.modules.helper_funcs.decorators import mikucmd
+from TofuXrobot.modules.log_channel import loggable
+from TofuXrobot.modules.helper_funcs.decorators import Tofucmd
 
-import MikuXProBot.modules.sql.logger_sql as sql
-from MikuXProBot.modules.helper_funcs.anonymous import user_admin as u_admin, AdminPerms
+import TofuXrobot.modules.sql.logger_sql as sql
+from TofuXrobot.modules.helper_funcs.anonymous import user_admin as u_admin, AdminPerms
 
 
-@mikucmd(command="announce", pass_args=True)
+@Tofucmd(command="announce", pass_args=True)
 @u_admin(AdminPerms.CAN_CHANGE_INFO)
 @loggable
 def announcestat(update: Update, context: CallbackContext) -> str:

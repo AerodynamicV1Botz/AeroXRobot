@@ -1,16 +1,16 @@
 import speedtest
-from MikuXProBot import DEV_USERS, dispatcher
-from MikuXProBot.modules.helper_funcs.chat_status import dev_plus
+from TofuXrobot import DEV_USERS, dispatcher
+from TofuXrobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext
-from MikuXProBot.modules.helper_funcs.decorators import mikucmd, mikucallback
+from TofuXrobot.modules.helper_funcs.decorators import Tofucmd, Tofucallback
 
 
 def convert(speed):
     return round(int(speed) / 1048576, 2)
 
 
-@mikucmd(command='speedtest')
+@Tofucmd(command='speedtest')
 @dev_plus
 def speedtestxyz(update: Update, context: CallbackContext):
     buttons = [
@@ -24,7 +24,7 @@ def speedtestxyz(update: Update, context: CallbackContext):
     )
 
 
-@mikucallback(pattern="speedtest_.*")
+@Tofucallback(pattern="speedtest_.*")
 def speedtestxyz_callback(update: Update, context: CallbackContext):
     query = update.callback_query
 

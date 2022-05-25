@@ -2,10 +2,10 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.helper_funcs.handlers import (CMD_STARTERS,
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.helper_funcs.handlers import (CMD_STARTERS,
                                                         SpamChecker)
-from MikuXProBot.modules.helper_funcs.misc import is_module_loaded
+from TofuXrobot.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, RegexHandler)
@@ -16,9 +16,9 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
 
-    from MikuXProBot.modules.helper_funcs.chat_status import (
+    from TofuXrobot.modules.helper_funcs.chat_status import (
         connection_status, is_user_admin, user_admin)
-    from MikuXProBot.modules.sql import disable_sql as sql
+    from TofuXrobot.modules.sql import disable_sql as sql
     from telegram.ext.dispatcher import run_async
 
     DISABLE_CMDS = []

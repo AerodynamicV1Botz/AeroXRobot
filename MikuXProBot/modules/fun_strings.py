@@ -26,7 +26,7 @@ GIFS = (
     "CgACAgQAAxkBAAILLmBPPY7bkDGWKszfehdSJ7RpW-7vAAJoCAACVkPRUQRXQgysd04VHgQ",
 ) 
 
-SLAP_MIKU_TEMPLATES = (
+SLAP_Tofu_TEMPLATES = (
     "Slap me one more time and I'll mute you.",
     "Stop slapping me. REEEEEEEEEEEEEE.",
     [

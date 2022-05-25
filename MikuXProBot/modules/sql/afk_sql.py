@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Boolean, BigInteger
 
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot.modules.sql import BASE, SESSION
 
 
 class AFK(BASE):

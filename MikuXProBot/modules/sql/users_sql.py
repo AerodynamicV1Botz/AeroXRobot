@@ -1,7 +1,7 @@
 import threading
 
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,

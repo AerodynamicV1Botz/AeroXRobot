@@ -3,8 +3,8 @@ import subprocess
 import sys
 from time import sleep
 
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.helper_funcs.chat_status import dev_plus
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 

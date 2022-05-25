@@ -1,10 +1,10 @@
 import html
 
-from MikuXProBot import (LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher)
-from MikuXProBot.modules.helper_funcs.chat_status import (user_admin,
+from TofuXrobot import (LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher)
+from TofuXrobot.modules.helper_funcs.chat_status import (user_admin,
                                                            user_not_admin)
-from MikuXProBot.modules.log_channel import loggable
-from MikuXProBot.modules.sql import reporting_sql as sql
+from TofuXrobot.modules.log_channel import loggable
+from TofuXrobot.modules.sql import reporting_sql as sql
 from telegram import (Chat, InlineKeyboardButton, InlineKeyboardMarkup,
                       ParseMode, Update)
 from telegram.error import BadRequest, Unauthorized

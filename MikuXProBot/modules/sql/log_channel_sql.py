@@ -3,7 +3,7 @@ import typing
 
 from sqlalchemy import Column, String, func, distinct, BigInteger, Boolean, select
 
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot.modules.sql import BASE, SESSION
 
 
 class GroupLogs(BASE):

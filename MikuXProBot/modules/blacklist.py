@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import MikuXProBot.modules.sql.blacklist_sql as sql
-from MikuXProBot import dispatcher, LOGGER
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from MikuXProBot.modules.helper_funcs.extraction import extract_text
-from MikuXProBot.modules.helper_funcs.misc import split_message
-from MikuXProBot.modules.log_channel import loggable
-from MikuXProBot.modules.warns import warn
-from MikuXProBot.modules.helper_funcs.string_handling import extract_time
-from MikuXProBot.modules.connection import connected
+import TofuXrobot.modules.sql.blacklist_sql as sql
+from TofuXrobot import dispatcher, LOGGER
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from TofuXrobot.modules.helper_funcs.extraction import extract_text
+from TofuXrobot.modules.helper_funcs.misc import split_message
+from TofuXrobot.modules.log_channel import loggable
+from TofuXrobot.modules.warns import warn
+from TofuXrobot.modules.helper_funcs.string_handling import extract_time
+from TofuXrobot.modules.connection import connected
 
-from MikuXProBot.modules.helper_funcs.alternate import send_message, typing_action
+from TofuXrobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 

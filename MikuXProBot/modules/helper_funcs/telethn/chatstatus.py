@@ -1,5 +1,5 @@
-from MikuXProBot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from MikuXProBot import DRAGONS
+from TofuXrobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from TofuXrobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
@@ -39,12 +39,12 @@ async def is_user_admin(user_id: int, chat_id):
     return status
 
 
-async def miku_is_admin(chat_id: int):
+async def Tofu_is_admin(chat_id: int):
     status = False
-    miku = await telethn.get_me()
+    Tofu = await telethn.get_me()
     async for user in telethn.iter_participants(
             chat_id, filter=ChannelParticipantsAdmins):
-        if miku.id == user.id:
+        if Tofu.id == user.id:
             status = True
             break
     return status

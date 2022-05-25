@@ -1,11 +1,11 @@
 import html
 
-from MikuXProBot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.chat_status import (bot_can_delete,
+from TofuXrobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.chat_status import (bot_can_delete,
                                                            connection_status,
                                                            dev_plus, user_admin)
-from MikuXProBot.modules.sql import cleaner_sql as sql
+from TofuXrobot.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async)
@@ -212,7 +212,7 @@ Blue text cleaner removed any made up commands that people send in your chat.
  • `/listblue`*:* list currently whitelisted commands
  
  *Following are Disasters only commands, admins cannot use these:*
- • `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Miku.
+ • `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Tofu.
  • `/ungignoreblue <word>`*:* remove said command from global cleaning list
 """
 

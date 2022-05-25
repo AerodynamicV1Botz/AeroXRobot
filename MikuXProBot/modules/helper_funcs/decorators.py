@@ -1,12 +1,12 @@
-from MikuXProBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from TofuXrobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, InlineQueryHandler
 from telegram.ext.filters import BaseFilter
-from MikuXProBot import dispatcher as d, LOGGER
+from TofuXrobot import dispatcher as d, LOGGER
 from typing import Optional, Union, List
 
 
 
-class MikuTelegramHandler:
+class TofuTelegramHandler:
     def __init__(self, d):
         self._dispatcher = d
 
@@ -25,7 +25,7 @@ class MikuTelegramHandler:
                     self._dispatcher.add_handler(
                         CommandHandler(command, func, filters=filters, run_async=run_async, pass_args=pass_args), group
                     )
-                LOGGER.debug(f"[MIKUCMD] Loaded handler {command} for function {func.__name__} in group {group}")
+                LOGGER.debug(f"[TofuCMD] Loaded handler {command} for function {func.__name__} in group {group}")
             except TypeError:
                 if can_disable:
                     self._dispatcher.add_handler(
@@ -35,7 +35,7 @@ class MikuTelegramHandler:
                     self._dispatcher.add_handler(
                         CommandHandler(command, func, filters=filters, run_async=run_async, pass_args=pass_args, pass_chat_data=pass_chat_data)
                     )
-                LOGGER.debug(f"[MIKUCMD] Loaded handler {command} for function {func.__name__}")
+                LOGGER.debug(f"[TofuCMD] Loaded handler {command} for function {func.__name__}")
 
             return func
 
@@ -52,7 +52,7 @@ class MikuTelegramHandler:
                     self._dispatcher.add_handler(
                         MessageHandler(pattern, func, run_async=run_async), group
                     )
-                LOGGER.debug(f"[MIKUMSG] Loaded filter pattern {pattern} for function {func.__name__} in group {group}")
+                LOGGER.debug(f"[TofuMSG] Loaded filter pattern {pattern} for function {func.__name__} in group {group}")
             except TypeError:
                 if can_disable:
                     self._dispatcher.add_handler(
@@ -62,7 +62,7 @@ class MikuTelegramHandler:
                     self._dispatcher.add_handler(
                         MessageHandler(pattern, func, run_async=run_async)
                     )
-                LOGGER.debug(f"[MIKUMSG] Loaded filter pattern {pattern} for function {func.__name__}")
+                LOGGER.debug(f"[TofuMSG] Loaded filter pattern {pattern} for function {func.__name__}")
 
             return func
         return _message
@@ -70,18 +70,18 @@ class MikuTelegramHandler:
     def callbackquery(self, pattern: str = None, run_async: bool = True):
         def _callbackquery(func):
             self._dispatcher.add_handler(CallbackQueryHandler(pattern=pattern, callback=func, run_async=run_async))
-            LOGGER.debug(f'[MIKUCALLBACK] Loaded callbackquery handler with pattern {pattern} for function {func.__name__}')
+            LOGGER.debug(f'[TofuCALLBACK] Loaded callbackquery handler with pattern {pattern} for function {func.__name__}')
             return func
         return _callbackquery
 
     def inlinequery(self, pattern: Optional[str] = None, run_async: bool = True, pass_user_data: bool = True, pass_chat_data: bool = True, chat_types: List[str] = None):
         def _inlinequery(func):
             self._dispatcher.add_handler(InlineQueryHandler(pattern=pattern, callback=func, run_async=run_async, pass_user_data=pass_user_data, pass_chat_data=pass_chat_data, chat_types=chat_types))
-            LOGGER.debug(f'[MIKUINLINE] Loaded inlinequery handler with pattern {pattern} for function {func.__name__} | PASSES USER DATA: {pass_user_data} | PASSES CHAT DATA: {pass_chat_data} | CHAT TYPES: {chat_types}')
+            LOGGER.debug(f'[TofuINLINE] Loaded inlinequery handler with pattern {pattern} for function {func.__name__} | PASSES USER DATA: {pass_user_data} | PASSES CHAT DATA: {pass_chat_data} | CHAT TYPES: {chat_types}')
             return func
         return _inlinequery
 
-mikucmd = MikuTelegramHandler(d).command
-mikumsg = MikuTelegramHandler(d).message
-mikucallback = MikuTelegramHandler(d).callbackquery
-mikuinline = MikuTelegramHandler(d).inlinequery
+Tofucmd = TofuTelegramHandler(d).command
+Tofumsg = TofuTelegramHandler(d).message
+Tofucallback = TofuTelegramHandler(d).callbackquery
+Tofuinline = TofuTelegramHandler(d).inlinequery

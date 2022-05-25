@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from MikuXProBot.modules.helper_funcs.msg_types import Types
-from MikuXProBot.modules.sql import BASE, SESSION
+from TofuXrobot.modules.helper_funcs.msg_types import Types
+from TofuXrobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):

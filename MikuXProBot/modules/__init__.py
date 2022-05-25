@@ -1,4 +1,4 @@
-from MikuXProBot import LOAD, LOGGER, NO_LOAD
+from TofuXrobot import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():

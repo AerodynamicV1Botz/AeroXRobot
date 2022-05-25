@@ -1,12 +1,12 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import MikuXProBot.modules.sql.blacklistusers_sql as sql
-from MikuXProBot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
+import TofuXrobot.modules.sql.blacklistusers_sql as sql
+from TofuXrobot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
                           dispatcher)
-from MikuXProBot.modules.helper_funcs.chat_status import dev_plus
-from MikuXProBot.modules.helper_funcs.extraction import (extract_user,
+from TofuXrobot.modules.helper_funcs.chat_status import dev_plus
+from TofuXrobot.modules.helper_funcs.extraction import (extract_user,
                                                           extract_user_and_text)
-from MikuXProBot.modules.log_channel import gloggable
+from TofuXrobot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

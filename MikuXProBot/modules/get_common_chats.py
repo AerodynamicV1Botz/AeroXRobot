@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from MikuXProBot import OWNER_ID, dispatcher
-from MikuXProBot.modules.helper_funcs.extraction import extract_user
-from MikuXProBot.modules.sql.users_sql import get_user_com_chats
+from TofuXrobot import OWNER_ID, dispatcher
+from TofuXrobot.modules.helper_funcs.extraction import extract_user
+from TofuXrobot.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters

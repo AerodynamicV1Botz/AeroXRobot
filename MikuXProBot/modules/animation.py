@@ -4,9 +4,9 @@ from typing import List
 from telegram import Update
 from telegram.ext import run_async, CallbackContext
 
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.chat_status import user_admin
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin
 
 # sleep how many times after each edit in 'love'
 EDIT_SLEEP = 1

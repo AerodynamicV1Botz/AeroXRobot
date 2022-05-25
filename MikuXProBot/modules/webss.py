@@ -2,8 +2,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from MikuXProBot import pgram as app
-from MikuXProBot.utils.errors import capture_err
+from TofuXrobot import pgram as app
+from TofuXrobot.utils.errors import capture_err
 
 __mod_name__ = "WebSS"
 __help__ = "/webss | .webss [URL] - Take A Screenshot Of A Webpage"

@@ -9,9 +9,9 @@ from io import BytesIO
 from datetime import datetime
 import random
 from telethon import events, Button, custom, version
-from MikuXProBot.events import register
-from MikuXProBot import telethn as borg, OWNER_ID, OWNER_NAME
-from MikuXProBot import StartTime, dispatcher
+from TofuXrobot.events import register
+from TofuXrobot import telethn as borg, OWNER_ID, OWNER_NAME
+from TofuXrobot import StartTime, dispatcher
 from telethon.tl.types import ChannelParticipantsAdmins
 from pyrogram import __version__ as pyro
 
@@ -51,15 +51,15 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    Miku = f"♡ **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm Miku**\n\n"
-    Miku += f"♡ **My Uptime** ~♪ `{uptime}`\n\n"
-    Miku += f"♡ **Telethon Version** ~♪ `{version.__version__}`\n\n"
-    Miku += f"♡ **Python Telegram Bot Version** ~♪ `{telegram.__version__}`\n\n"
-    Miku += f"♡ **Pyrogram Version** ~♪ `{pyro}`\n\n"
-    Miku += f"♡ **My Master** ~♪ [{OWNER_NAME}](tg://user?id={OWNER_ID})\n\n"
-    Miku += f"Thanks For Adding Me In {yes.chat.title}"
-    BUTTON = [[Button.url("Support Chat", "https://t.me/MikusSupport"), Button.url("Updates Channel", "https://t.me/Pegasusupdates")]]
-    on = await borg.send_file(yes.chat_id, file=file2,caption=Miku, buttons=BUTTON)
+    Tofu = f"♡ **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm Tofu**\n\n"
+    Tofu += f"♡ **My Uptime** ~♪ `{uptime}`\n\n"
+    Tofu += f"♡ **Telethon Version** ~♪ `{version.__version__}`\n\n"
+    Tofu += f"♡ **Python Telegram Bot Version** ~♪ `{telegram.__version__}`\n\n"
+    Tofu += f"♡ **Pyrogram Version** ~♪ `{pyro}`\n\n"
+    Tofu += f"♡ **My Master** ~♪ [{OWNER_NAME}](tg://user?id={OWNER_ID})\n\n"
+    Tofu += f"Thanks For Adding Me In {yes.chat.title}"
+    BUTTON = [[Button.url("Support Chat", "https://t.me/tofu_support"), Button.url("Updates Channel", "https://t.me/Pegasusupdates")]]
+    on = await borg.send_file(yes.chat_id, file=file2,caption=Tofu, buttons=BUTTON)
 
     await asyncio.sleep(edit_time)
     ok = await borg.edit_message(yes.chat_id, on, file=file3, buttons=BUTTON) 
@@ -84,6 +84,6 @@ async def hmm(yes):
 
 @register(pattern=("/repo"))
 async def repo(event):
-    Miku = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
-    BUTTON = [[Button.url("[► Support ◄]", "https://t.me/MikusSupport"), Button.url("[► Repo ◄]", "https://github.com/h0daka/Miku-Nakano")]]
-    await borg.send_file(event.chat_id, file="https://telegra.ph/file/c5b6c0a3a6832efc08e5b.jpg", caption=Miku, buttons=BUTTON)
+    Tofu = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
+    BUTTON = [[Button.url("[► Support ◄]", "https://t.me/tofu_support"), Button.url("[► Repo ◄]", "https://github.com/Awesome-Tofu/Tofu-Robot")]]
+    await borg.send_file(event.chat_id, file="https://telegra.ph/file/c5b6c0a3a6832efc08e5b.jpg", caption=Tofu, buttons=BUTTON)

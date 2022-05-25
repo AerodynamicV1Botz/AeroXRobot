@@ -19,11 +19,11 @@ class Language:
             return en_string
 
     def reload_strings(self) -> None:
-        for filename in os.listdir(r"./MikuXProBot/langs"):
+        for filename in os.listdir(r"./TofuXrobot/langs"):
             if filename.endswith(".yaml"):
                 language_name = filename[:-5]
                 self.languages[language_name] = yaml.safe_load(
-                    open(r"./MikuXProBot/langs/" + filename, encoding="utf8")
+                    open(r"./TofuXrobot/langs/" + filename, encoding="utf8")
                 )
 
     def get_languages(self) -> Dict:

@@ -8,7 +8,7 @@ from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 
-from MikuXProBot import (
+from TofuXrobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -18,16 +18,16 @@ from MikuXProBot import (
     WOLVES,
     dispatcher,
 )
-from MikuXProBot.modules.helper_funcs.chat_status import (
+from TofuXrobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from MikuXProBot.modules.helper_funcs.extraction import extract_user
-from MikuXProBot.modules.log_channel import gloggable
-import MikuXProBot.modules.sql.nation_sql as sql
+from TofuXrobot.modules.helper_funcs.extraction import extract_user
+from TofuXrobot.modules.log_channel import gloggable
+import TofuXrobot.modules.sql.nation_sql as sql
 from telegram.ext.dispatcher import run_async
-from MikuXProBot.modules.helper_funcs.decorators import mikucmd
+from TofuXrobot.modules.helper_funcs.decorators import Tofucmd
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
     bot = context.bot
@@ -40,7 +40,7 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
     else:
         return None
 
-@mikucmd(command='addsudo')
+@Tofucmd(command='addsudo')
 @dev_plus
 @gloggable
 def addsudo(update: Update, context: CallbackContext) -> str:
@@ -92,7 +92,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
     return log_message
 
 
-@mikucmd(command='addsupport')
+@Tofucmd(command='addsupport')
 @sudo_plus
 @gloggable
 def addsupport(
@@ -143,7 +143,7 @@ def addsupport(
     return log_message
 
 
-@mikucmd(command='addwhitelist')
+@Tofucmd(command='addwhitelist')
 @sudo_plus
 @gloggable
 def addwhitelist(update: Update, context: CallbackContext) -> str:
@@ -191,7 +191,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
     return log_message
 
 
-@mikucmd(command='addassistant')
+@Tofucmd(command='addassistant')
 @sudo_plus
 @gloggable
 def addassistant(update: Update, context: CallbackContext) -> str:
@@ -243,7 +243,7 @@ def addassistant(update: Update, context: CallbackContext) -> str:
     return log_message
 
 
-@mikucmd(command='removesudo')
+@Tofucmd(command='removesudo')
 @dev_plus
 @gloggable
 def removesudo(update: Update, context: CallbackContext) -> str:
@@ -280,7 +280,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         return ""
 
 
-@mikucmd(command='removesupport')
+@Tofucmd(command='removesupport')
 @sudo_plus
 @gloggable
 def removesupport(update: Update, context: CallbackContext) -> str:
@@ -317,7 +317,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return ""
 
 
-@mikucmd(command='removewhitelist')
+@Tofucmd(command='removewhitelist')
 @sudo_plus
 @gloggable
 def removewhitelist(update: Update, context: CallbackContext) -> str:
@@ -353,7 +353,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
         return ""
 
 
-@mikucmd(command='removeassistant')
+@Tofucmd(command='removeassistant')
 @sudo_plus
 @gloggable
 def removeassistant(update: Update, context: CallbackContext) -> str:
@@ -390,7 +390,7 @@ def removeassistant(update: Update, context: CallbackContext) -> str:
 
 
 
-@mikucmd(command='whitelists')
+@Tofucmd(command='whitelists')
 @whitelist_plus
 def whitelists(update: Update, context: CallbackContext):
     bot = context.bot
@@ -405,7 +405,7 @@ def whitelists(update: Update, context: CallbackContext):
             pass
     update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
 
-@mikucmd(command='assistants')
+@Tofucmd(command='assistants')
 @whitelist_plus
 def Beasts(update: Update, context: CallbackContext):
     bot = context.bot
@@ -419,7 +419,7 @@ def Beasts(update: Update, context: CallbackContext):
             pass
     update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
 
-@mikucmd(command=["supportlist", "beasts"])
+@Tofucmd(command=["supportlist", "beasts"])
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
@@ -433,7 +433,7 @@ def supportlist(update: Update, context: CallbackContext):
             pass
     update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
 
-@mikucmd(command=["sudolist", "royals"])
+@Tofucmd(command=["sudolist", "royals"])
 @whitelist_plus
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
@@ -448,7 +448,7 @@ def sudolist(update: Update, context: CallbackContext):
             pass
     update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
 
-@mikucmd(command=["devlist", "Rulers"])
+@Tofucmd(command=["devlist", "Rulers"])
 @whitelist_plus
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
@@ -464,7 +464,7 @@ def devlist(update: Update, context: CallbackContext):
     update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
 
 
-from MikuXProBot.modules.language import gs
+from TofuXrobot.modules.language import gs
 
 def get_help(chat):
     return gs(chat, "nation_help")

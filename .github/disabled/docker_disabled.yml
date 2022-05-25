@@ -24,7 +24,7 @@ jobs:
 
         with:
 
-          name:  h0daka/Miku-Nakano
+          name:  awesome_tofu/Tofu-Robot
 
           username: ${{ secrets.DOCKER_USERNAME }}
 

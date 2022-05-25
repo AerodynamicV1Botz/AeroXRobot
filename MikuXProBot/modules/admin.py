@@ -14,9 +14,9 @@ from telethon.errors import *
 from telethon.tl import *
 from telethon import *
 
-from MikuXProBot import DRAGONS, dispatcher, telethn as bot
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.helper_funcs.chat_status import (
+from TofuXrobot import DRAGONS, dispatcher, telethn as bot
+from TofuXrobot.modules.disable import DisableAbleCommandHandler
+from TofuXrobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -29,12 +29,12 @@ from MikuXProBot.modules.helper_funcs.chat_status import (
     can_manage_voice_chats,
 )
 
-from MikuXProBot.modules.helper_funcs.extraction import (
+from TofuXrobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from MikuXProBot.modules.log_channel import loggable
-from MikuXProBot.modules.helper_funcs.alternate import send_message
+from TofuXrobot.modules.log_channel import loggable
+from TofuXrobot.modules.helper_funcs.alternate import send_message
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):

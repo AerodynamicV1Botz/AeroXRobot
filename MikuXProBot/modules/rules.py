@@ -1,8 +1,8 @@
 from typing import Optional
 
-import MikuXProBot.modules.sql.rules_sql as sql
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.helper_funcs.string_handling import markdown_parser
+import TofuXrobot.modules.sql.rules_sql as sql
+from TofuXrobot import dispatcher
+from TofuXrobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -14,12 +14,12 @@ from telegram import (
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters
 from telegram.utils.helpers import escape_markdown
-from MikuXProBot.modules.helper_funcs.decorators import mikucmd
+from TofuXrobot.modules.helper_funcs.decorators import Tofucmd
 
 from ..modules.helper_funcs.anonymous import user_admin, AdminPerms
 
 
-@mikucmd(command='rules', filters=Filters.chat_type.groups)
+@Tofucmd(command='rules', filters=Filters.chat_type.groups)
 def get_rules(update: Update, _: CallbackContext):
     chat_id = update.effective_chat.id
     send_rules(update, chat_id)
@@ -78,7 +78,7 @@ def send_rules(update, chat_id, from_pm=False):
         )
 
 
-@mikucmd(command='setrules', filters=Filters.chat_type.groups)
+@Tofucmd(command='setrules', filters=Filters.chat_type.groups)
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
 def set_rules(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
@@ -96,7 +96,7 @@ def set_rules(update: Update, context: CallbackContext):
         update.effective_message.reply_text("Successfully set rules for this group.")
 
 
-@mikucmd(command='clearrules', filters=Filters.chat_type.groups)
+@Tofucmd(command='clearrules', filters=Filters.chat_type.groups)
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
 def clear_rules(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
@@ -122,7 +122,7 @@ def __chat_settings__(chat_id, user_id):
     return f"This chat has had it's rules set: `{bool(sql.get_rules(chat_id))}`"
 
 
-from MikuXProBot.modules.language import gs
+from TofuXrobot.modules.language import gs
 
 
 def get_help(chat):

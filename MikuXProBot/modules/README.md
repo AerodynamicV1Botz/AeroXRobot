@@ -1,13 +1,13 @@
-# Miku Example plugin format
+# Tofu Example plugin format
 
 ## Advanced: Decorators
 ```python3
 
-from MikuXProBot.modules.helper_funcs.decorators import mikucmd
+from TofuXrobot.modules.helper_funcs.decorators import Tofucmd
 from telegram import Update
 from telegram.ext import CallbackContext
 
-@mikucmd(command='hi', pass_args=True)
+@Tofucmd(command='hi', pass_args=True)
 def hello(update: Update, context: CallbackContext):
     message = update.effective_message
     message.reply_text("hello")
@@ -24,7 +24,7 @@ __help__ = """
 
 ## Advanced: Pyrogram
 ```python3
-from MikuXProBot import pgram
+from TofuXrobot import pgram
 
 @pgram.on_message(filters.command("hi") & ~filters.edited & ~filters.bot)
 async def hmm(client, message):
@@ -41,8 +41,8 @@ __help__ = """
 ## Advanced: Telethon
 ```python3
 
-from MikuXProBot import telethn
-from MikuXProBot.events import register
+from TofuXrobot import telethn
+from TofuXrobot.events import register
 
 @register(pattern="^/hi$")
 async def hmm(event):
@@ -59,7 +59,7 @@ __help__ = """
 ## Advanced: PTB
 ```python3
 
-from MikuXProBot import dispatcher
+from TofuXrobot import dispatcher
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 

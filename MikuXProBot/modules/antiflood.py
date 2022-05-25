@@ -3,19 +3,19 @@ from typing import Optional, List
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from MikuXProBot import TIGERS, WOLVES, dispatcher
-from MikuXProBot.modules.helper_funcs.chat_status import (bot_admin,
+from TofuXrobot import TIGERS, WOLVES, dispatcher
+from TofuXrobot.modules.helper_funcs.chat_status import (bot_admin,
                                                            is_user_admin,
                                                            user_admin,
                                                            user_admin_no_reply)
-from MikuXProBot.modules.log_channel import loggable
-from MikuXProBot.modules.sql import antiflood_sql as sql
+from TofuXrobot.modules.log_channel import loggable
+from TofuXrobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, Filters, MessageHandler, run_async
 from telegram.utils.helpers import mention_html, escape_markdown
-from MikuXProBot.modules.helper_funcs.string_handling import extract_time
-from MikuXProBot.modules.connection import connected
-from MikuXProBot.modules.helper_funcs.alternate import send_message
+from TofuXrobot.modules.helper_funcs.string_handling import extract_time
+from TofuXrobot.modules.connection import connected
+from TofuXrobot.modules.helper_funcs.alternate import send_message
 FLOOD_GROUP = 3
 
 

@@ -5,7 +5,7 @@ import re
 import html
 import subprocess
 from io import StringIO, BytesIO
-from MikuXProBot import pgram, DEV_USERS
+from TofuXrobot import pgram, DEV_USERS
 from pyrogram import filters
 
 
@@ -115,15 +115,15 @@ async def terminal(client, message):
         output = None
     if output:
         if len(output) > 4096:
-            with open("MikuXProBot/output.txt", "w+") as file:
+            with open("TofuXrobot/output.txt", "w+") as file:
                 file.write(output)
             await client.send_document(
                 message.chat.id,
-                "MikuXProBot/output.txt",
+                "TofuXrobot/output.txt",
                 reply_to_message_id=message.message_id,
                 caption="`Output file`",
             )
-            os.remove("MikuXProBot/output.txt")
+            os.remove("TofuXrobot/output.txt")
             return
         await message.reply(f"**Output:**\n`{output}`", parse_mode="markdown")
     else:
