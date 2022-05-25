@@ -1,4 +1,4 @@
-![Tofu](https://telegra.ph/file/13e0d4b1256ddf3c8febe.png)
+![Tofu](https://telegra.ph/file/f6962c56b06da5f471906.png)
 # 𝓣𝓸𝓯𝓾
 <h3 align="center"> 
     A Modular Telegram Python Bot Running On Python3 With Mongo DB, Sqlalchemy, Redis Database.
