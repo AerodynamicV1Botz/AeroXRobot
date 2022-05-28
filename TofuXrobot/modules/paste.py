@@ -1,5 +1,3 @@
-
-
 import asyncio
 import os
 import re
@@ -9,9 +7,12 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from TofuXrobot import pgram, aiohttpsession
+from TofuXrobot import aiohttpsession as session
+from TofuXrobot import pgram as app
 from TofuXrobot.utils.errors import capture_err
 from TofuXrobot.utils.pastebin import paste
+
+__mod_name__ = "Paste"
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
@@ -21,7 +22,7 @@ pattern = re.compile(
 async def isPreviewUp(preview: str) -> bool:
     for _ in range(7):
         try:
-            async with aiohttpsession.head(preview, timeout=2) as resp:
+            async with session.head(preview, timeout=2) as resp:
                 status = resp.status
                 size = resp.content_length
         except asyncio.exceptions.TimeoutError:
@@ -29,11 +30,11 @@ async def isPreviewUp(preview: str) -> bool:
         if status == 404 or (status == 200 and size == 0):
             await asyncio.sleep(0.4)
         else:
-            return status == 200
+            return True if status == 200 else False
     return False
 
 
-@pgram.on_message(filters.command("paste") & ~filters.edited)
+@app.on_message(filters.command("paste") & ~filters.edited)
 @capture_err
 async def paste_func(_, message):
     if not message.reply_to_message:
@@ -69,7 +70,3 @@ async def paste_func(_, message):
         except Exception:
             pass
     return await m.edit(link)
-
-
-
-__mod_name__ = "Paste"
