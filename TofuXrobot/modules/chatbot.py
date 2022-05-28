@@ -14,10 +14,10 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from KURUMIBOT.modules.helper_funcs.filters import CustomFilters
-from KURUMIBOT.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from KURUMIBOT import dispatcher, updater, SUPPORT_CHAT
-from KURUMIBOT.modules.log_channel import gloggable
+from TofuXrobot.modules.helper_funcs.filters import CustomFilters
+from TofuXrobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from TofuXrobot import dispatcher, updater, SUPPORT_CHAT
+from TofuXrobot.modules.log_channel import gloggable
 
 CHATS = []
 
