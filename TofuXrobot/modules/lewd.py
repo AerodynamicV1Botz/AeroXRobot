@@ -1,6 +1,6 @@
 import os
 import html
-import Tofus
+import nekos
 import requests
 import TofuXrobot.modules.sql.nsfw_sql as sql
 
@@ -74,7 +74,7 @@ def list_nsfw_chats(update: Update, context: CallbackContext):
 def Tofu(update, context):
     msg = update.effective_message
     target = "Tofu"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 
 def feet(update, context):
@@ -85,7 +85,7 @@ def feet(update, context):
             return
     msg = update.effective_message
     target = "feet"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def yuri(update, context):
     chat_id = update.effective_chat.id
@@ -95,7 +95,7 @@ def yuri(update, context):
             return
     msg = update.effective_message
     target = "yuri"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def trap(update, context):
     chat_id = update.effective_chat.id
@@ -105,7 +105,7 @@ def trap(update, context):
             return
     msg = update.effective_message
     target = "trap"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def futanari(update, context):
     chat_id = update.effective_chat.id
@@ -115,7 +115,7 @@ def futanari(update, context):
             return
     msg = update.effective_message
     target = "futanari"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def hololewd(update, context):
     chat_id = update.effective_chat.id
@@ -125,7 +125,7 @@ def hololewd(update, context):
             return
     msg = update.effective_message
     target = "hololewd"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def lewdkemo(update, context):
     chat_id = update.effective_chat.id
@@ -135,7 +135,7 @@ def lewdkemo(update, context):
             return
     msg = update.effective_message
     target = "lewdkemo"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 
 def sologif(update, context):
@@ -146,7 +146,7 @@ def sologif(update, context):
             return
     msg = update.effective_message
     target = "solog"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 def feetgif(update, context):
@@ -157,7 +157,7 @@ def feetgif(update, context):
             return
     msg = update.effective_message
     target = "feetg"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def cumgif(update, context):
     chat_id = update.effective_chat.id
@@ -167,7 +167,7 @@ def cumgif(update, context):
             return
     msg = update.effective_message
     target = "cum"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def erokemo(update, context):
     chat_id = update.effective_chat.id
@@ -177,7 +177,7 @@ def erokemo(update, context):
             return
     msg = update.effective_message
     target = "erokemo"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def lesbian(update, context):
     chat_id = update.effective_chat.id
@@ -187,12 +187,12 @@ def lesbian(update, context):
             return
     msg = update.effective_message
     target = "les"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def wallpaper(update, context):
     msg = update.effective_message
     target = "wallpaper"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def lewdk(update, context):
     chat_id = update.effective_chat.id
@@ -202,7 +202,7 @@ def lewdk(update, context):
             return
     msg = update.effective_message
     target = "lewdk"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def ngif(update, context):
     chat_id = update.effective_chat.id
@@ -212,13 +212,13 @@ def ngif(update, context):
             return
     msg = update.effective_message
     target = "ngif"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 def tickle(update, context):
      msg = update.effective_message
      target = "tickle"
-     msg.reply_video(Tofus.img(target))
+     msg.reply_video(nekos.img(target))
 
 def lewd(update, context):
     chat_id = update.effective_chat.id
@@ -228,13 +228,13 @@ def lewd(update, context):
             return
     msg = update.effective_message
     target = "lewd"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 
 def feed(update, context):
     msg = update.effective_message
     target = "feed"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 def eroyuri(update, context):
@@ -245,7 +245,7 @@ def eroyuri(update, context):
             return
     msg = update.effective_message
     target = "eroyuri"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def eron(update, context):
     chat_id = update.effective_chat.id
@@ -255,7 +255,7 @@ def eron(update, context):
             return
     msg = update.effective_message
     target = "eron"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def cum(update, context):
     chat_id = update.effective_chat.id
@@ -265,7 +265,7 @@ def cum(update, context):
             return
     msg = update.effective_message
     target = "cum_jpg"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def bjgif(update, context):
     chat_id = update.effective_chat.id
@@ -275,7 +275,7 @@ def bjgif(update, context):
             return
     msg = update.effective_message
     target = "bj"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def bj(update, context):
     chat_id = update.effective_chat.id
@@ -285,7 +285,7 @@ def bj(update, context):
             return
     msg = update.effective_message
     target = "blowjob"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def Tofunsfw(update, context):
     chat_id = update.effective_chat.id
@@ -295,7 +295,7 @@ def Tofunsfw(update, context):
             return
     msg = update.effective_message
     target = "nsfw_Tofu_gif"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def solo(update, context):
     chat_id = update.effective_chat.id
@@ -305,7 +305,7 @@ def solo(update, context):
             return
     msg = update.effective_message
     target = "solo"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def kemonomimi(update, context):
     chat_id = update.effective_chat.id
@@ -315,7 +315,7 @@ def kemonomimi(update, context):
             return
     msg = update.effective_message
     target = "kemonomimi"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def avatarlewd(update, context):
     chat_id = update.effective_chat.id
@@ -326,7 +326,7 @@ def avatarlewd(update, context):
     msg = update.effective_message
     target = "nsfw_avatar"
     with open("temp.png", "wb") as f:
-        f.write(requests.get(Tofus.img(target)).content)
+        f.write(requests.get(nekos.img(target)).content)
     img = Image.open("temp.png")
     img.save("temp.webp", "webp")
     msg.reply_document(open("temp.webp", "rb"))
@@ -341,7 +341,7 @@ def gasm(update, context):
     msg = update.effective_message
     target = "gasm"
     with open("temp.png", "wb") as f:
-        f.write(requests.get(Tofus.img(target)).content)
+        f.write(requests.get(nekos.img(target)).content)
     img = Image.open("temp.png")
     img.save("temp.webp", "webp")
     msg.reply_document(open("temp.webp", "rb"))
@@ -351,7 +351,7 @@ def gasm(update, context):
 def poke(update, context):
     msg = update.effective_message
     target = "poke"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 def anal(update, context):
@@ -362,7 +362,7 @@ def anal(update, context):
             return
     msg = update.effective_message
     target = "anal"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def hentai(update, context):
     chat_id = update.effective_chat.id
@@ -372,13 +372,13 @@ def hentai(update, context):
             return
     msg = update.effective_message
     target = "hentai"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def avatar(update, context):
     msg = update.effective_message
     target = "nsfw_avatar"
     with open("temp.png", "wb") as f:
-        f.write(requests.get(Tofus.img(target)).content)
+        f.write(requests.get(nekos.img(target)).content)
     img = Image.open("temp.png")
     img.save("temp.webp", "webp")
     msg.reply_document(open("temp.webp", "rb"))
@@ -392,12 +392,12 @@ def erofeet(update, context):
             return
     msg = update.effective_message
     target = "erofeet"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def holo(update, context):
     msg = update.effective_message
     target = "holo"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def keta(update, context):
     chat_id = update.effective_chat.id
@@ -410,7 +410,7 @@ def keta(update, context):
     if not target:
         msg.reply_text("No URL was received from the API!")
         return
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def pussygif(update, context):
     chat_id = update.effective_chat.id
@@ -420,7 +420,7 @@ def pussygif(update, context):
             return
     msg = update.effective_message
     target = "pussy"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def tits(update, context):
     chat_id = update.effective_chat.id
@@ -430,7 +430,7 @@ def tits(update, context):
             return
     msg = update.effective_message
     target = "tits"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def holoero(update, context):
     chat_id = update.effective_chat.id
@@ -440,7 +440,7 @@ def holoero(update, context):
             return
     msg = update.effective_message
     target = "holoero"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def pussy(update, context):
     chat_id = update.effective_chat.id
@@ -450,7 +450,7 @@ def pussy(update, context):
             return
     msg = update.effective_message
     target = "pussy_jpg"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 def hentaigif(update, context):
     chat_id = update.effective_chat.id
@@ -460,7 +460,7 @@ def hentaigif(update, context):
             return
     msg = update.effective_message
     target = "random_hentai_gif"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def classic(update, context):
     chat_id = update.effective_chat.id
@@ -470,7 +470,7 @@ def classic(update, context):
             return
     msg = update.effective_message
     target = "classic"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 def kuni(update, context):
     chat_id = update.effective_chat.id
@@ -480,14 +480,14 @@ def kuni(update, context):
             return
     msg = update.effective_message
     target = "kuni"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 def waifu(update, context):
     msg = update.effective_message
     target = "waifu"
     with open("temp.png", "wb") as f:
-        f.write(requests.get(Tofus.img(target)).content)
+        f.write(requests.get(nekos.img(target)).content)
     img = Image.open("temp.png")
     img.save("temp.webp", "webp")
     msg.reply_document(open("temp.webp", "rb"))
@@ -497,7 +497,7 @@ def waifu(update, context):
 def kiss(update, context):
     msg = update.effective_message
     target = "kiss"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 
@@ -509,20 +509,20 @@ def femdom(update, context):
             return
     msg = update.effective_message
     target = "femdom"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 
 
 def hug(update, context):
     msg = update.effective_message
     target = "cuddle"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 def cuddle(update, context):
     msg = update.effective_message
     target = "cuddle"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 def erok(update, context):
@@ -533,7 +533,7 @@ def erok(update, context):
             return
     msg = update.effective_message
     target = "erok"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 
 
@@ -545,7 +545,7 @@ def foxgirl(update, context):
             return
     msg = update.effective_message
     target = "fox_girl"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 
 
@@ -557,7 +557,7 @@ def titsgif(update, context):
             return
     msg = update.effective_message
     target = "boobs"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 
@@ -569,21 +569,21 @@ def ero(update, context):
             return
     msg = update.effective_message
     target = "ero"
-    msg.reply_photo(Tofus.img(target))
+    msg.reply_photo(nekos.img(target))
 
 
 
 def smug(update, context):
     msg = update.effective_message
     target = "smug"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 
 def baka(update, context):
     msg = update.effective_message
     target = "baka"
-    msg.reply_video(Tofus.img(target))
+    msg.reply_video(nekos.img(target))
 
 
 def dva(update, context):
