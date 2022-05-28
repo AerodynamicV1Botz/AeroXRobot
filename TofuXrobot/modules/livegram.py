@@ -5,7 +5,7 @@ from pyrogram import (
 from pyrogram.types import (
     Message
 )
-from TofuXrobot import pbot as bot
+from TofuXrobot import pgram as bot
 from TofuXrobot import OWNER_ID
 
 @bot.on_message(
