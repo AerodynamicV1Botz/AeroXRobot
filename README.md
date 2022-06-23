@@ -1,6 +1,6 @@
 <div align="center">
-<img src="https://telegra.ph/file/f6962c56b06da5f471906.png" alt=""></div>
-<H2> # 𝓣𝓸𝓯𝓾 </H2>
+<img src="https://telegra.ph//file/930b78ad0d3629f7047ec.jpg" alt=""></div>
+<H2> # AeroXRobot </H2>
 <h3 align="center"> 
     A Modular Telegram Python Bot Running On Python3 With Mongo DB, Sqlalchemy, Redis Database.
 </h3>
@@ -62,7 +62,7 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 	
   <h1>
     <p align="center">
-        <a href="https://heroku.com/deploy?template=https://github.com/Awesome-Tofu/Tofu-Robot">
+        <a href="https://heroku.com/deploy?template=https://github.com/AerodynamicV1Botz/AeroXRobot">
             <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
         </a>
     </p>
@@ -79,7 +79,7 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 </p>
 
 ```console
-    ~$ git clone https://github.com/Awesome-Tofu/Tofu-Robot
+    ~$ git clone https://github.com/AerodynamicV1Botz/AeroXRobot
     ~$ cd Tofu-Robot
     ~$ cp sample_config.py config.py
 ```
