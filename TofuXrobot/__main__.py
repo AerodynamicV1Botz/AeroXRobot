@@ -56,32 +56,38 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="🏹 Summon Me",
+                             text="[►Summon Me◄]",
                              url="https://t.me/TofuXrobot?startgroup=true"),
                         InlineKeyboardButton(
-                             text="🗞️ Repo",
-                             url="https://github.com/Awesome-Tofu/Tofu-Robot"),
+                             text="[►Help◄]",
+                             callback_data="help_back"),
                     ],
                    [                  
                        InlineKeyboardButton(
-                             text="🔐 Help",
-                             callback_data="help_back"),
+                             text="[►Source Code◄]",
+                             url="https://github.com/AerodynamicV1Botz/AeroXRobot"),
                         InlineKeyboardButton(
-                             text=" 💫 About Me",
+                             text=" [►About Me◄]",
                              callback_data="Tofu_"),
-                    ], 
+                    ],[
+                        InlineKeyboardButton(
+                             text="[►ChitChat💬◄]",
+                             url="https://t.me/TofuXrobot?startgroup=true"),
+                        InlineKeyboardButton(
+                             text="[►Update🔔◄]",
+                             url="https://github.com/AerodynamicV1Botz/AeroXRobot"),
+                    ],
     ]
 
 
 HELP_STRINGS = """
 *Hey your {} is here!  
 *Main* commands available :
- • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/78badc1eca4fca44142ad.jpg) *!*
+For all command use /* [or](https://telegra.ph//file/930b78ad0d3629f7047ec.jpg) *!*
 """.format(
     dispatcher.bot.first_name,""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
@@ -213,11 +219,11 @@ def start(update: Update, context: CallbackContext):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="🚑 Support",
-                             url=f"https://t.me/TofuXsupport"),
+                             text="[►Support💬◄]",
+                             url=f"https://t.me/AerodynamicV1_Promotion"),
                        InlineKeyboardButton(
-                             text="🛰️ Updates",
-                             url="https://t.me/TofuXUpdates")
+                             text=”[►Update🔔◄]",
+                             url="https://t.me/AerodynamicV1_UPDATE")
                      ] 
                 ]
             ),
@@ -329,12 +335,12 @@ def Tofu_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🌏 My Master", url="t.me/awesome_tofu"),
-                    InlineKeyboardButton(text="✨ Try Inline", switch_inline_query_current_chat="",),
+                    InlineKeyboardButton(text="[►Developer◄]", url="t.me/AerodynamicV1_OFFICIAL"),
+                    InlineKeyboardButton(text="[►Inline◄]", switch_inline_query_current_chat="",),
                  ],
                  [
-                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/TofuXUpdates"),
-                    InlineKeyboardButton(text="🚑 Support", url="t.me/tofu_support"),
+                    InlineKeyboardButton(text="[►Update🔔◄]", url="t.me/AerodynamicV1_UPDATE"),
+                    InlineKeyboardButton(text="[►Support💬◄]", url="t.me/AerodynamicV1_Promotion"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="Tofu_back")
@@ -382,7 +388,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/TofuXrobot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/AeroXrobot?start=help")
                   ]
                 ]
             ),
@@ -396,10 +402,10 @@ def get_help(update: Update, context: CallbackContext):
         send_help(
             chat.id, text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back",
+                [[InlineKeyboardButton(text="[►Back◄]",
                                        callback_data="help_back"),
-                  InlineKeyboardButton(text="Support",
-                                       url="t.me/tofu_support")]]))
+                  InlineKeyboardButton(text="[►Support💬◄]",
+                                       url="t.me/AerodynamicV1_Promotion")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
@@ -598,7 +604,7 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="[► Summon Me◄]",
-                             url="https://t.me/TofuXrobot?startgroup=true")
+                             url="https://t.me/AeroXrobot?startgroup=true")
                      ] 
                 ]
             ),
