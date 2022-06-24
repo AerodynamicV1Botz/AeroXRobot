@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
                              text="[►Support💬◄]",
                              url=f"https://t.me/AerodynamicV1_Promotion"),
                        InlineKeyboardButton(
-                             text=”[►Update🔔◄]",
+                             text="[►Update🔔◄]",
                              url="https://t.me/AerodynamicV1_UPDATE")
                      ] 
                 ]
