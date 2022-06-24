@@ -75,7 +75,7 @@ buttons = [
                              url="https://t.me/TofuXrobot?startgroup=true"),
                         InlineKeyboardButton(
                              text="[►Update🔔◄]",
-                             url="https://github.com/AerodynamicV1Botz/AeroXRobot"),
+                             url="https://t.me/AerodynamicV1_UPDATE"),
                     ],
     ]
 
