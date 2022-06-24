@@ -57,7 +57,7 @@ buttons = [
     [
                         InlineKeyboardButton(
                              text="[►Summon Me◄]",
-                             url="https://t.me/TofuXrobot?startgroup=true"),
+                             url="https://t.me/AeroXrobot?startgroup=true"),
                         InlineKeyboardButton(
                              text="[►Help◄]",
                              callback_data="help_back"),
@@ -67,12 +67,12 @@ buttons = [
                              text="[►Source Code◄]",
                              url="https://github.com/AerodynamicV1Botz/AeroXRobot"),
                         InlineKeyboardButton(
-                             text=" [►About Me◄]",
+                             text="[►About Me◄]",
                              callback_data="Tofu_"),
                     ],[
                         InlineKeyboardButton(
                              text="[►ChitChat💬◄]",
-                             url="https://t.me/TofuXrobot?startgroup=true"),
+                             url="https://t.me/AeroXrobot?startgroup=true"),
                         InlineKeyboardButton(
                              text="[►Update🔔◄]",
                              url="https://t.me/AerodynamicV1_UPDATE"),
@@ -329,7 +329,7 @@ def Tofu_callback_data(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n❍ Tofu licensed under the GNU General Public License v3.0
-                 \n❍ If you have any question about Tofu, let us know at [Tofu Support](t.me/{SUPPORT_CHAT}).""",
+                 \n❍ If you have any question about Tofu, let us know at [Aero Support](t.me/{SUPPORT_CHAT}).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
