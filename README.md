@@ -15,7 +15,7 @@
 <img src="https://img.shields.io/badge/python-3.10.1-green?style=for-the-badge&logo=appveyor" alt="Python Version">
 <img src="https://img.shields.io/badge/Telethon-1.24.0-yellow?style=for-the-badge&logo=appveyor" alt="Telethon Version">
 <img src="https://img.shields.io/badge/Pyrogram-1.4.1-red?style=for-the-badge&logo=appveyor" alt="Pyrogram Version">
-<a href="https://github.com/Awesome-Tofu/Tofu-Robot"> <img src="https://img.shields.io/github/repo-size/awesome_tofu/Tofu-Robot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
+<a href="https://github.com/AerodynamicV1Botz/AeroXRobot Robot"> <img src="https://img.shields.io/github/repo-size/AerodynamicV1Botz/AeroXRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
 <div>
 <h1 color="red"> YOU WILL FACE SOME PROBLEM AFTER DEPLOYMENT, I SUGGEST YOU TO DON'T DEPLOY WITH THIS REPO!</h1>
 </div>
@@ -31,27 +31,21 @@
 + [x] Heroku Deploy
 + [x] Docker/Local Machine
 
-╘══「 Can be found on telegram as [Tofu](https://t.me/TofuXrobot) 」
+╘══「 Can be found on telegram as [AeroXRobot](https://t.me/AeroXrobot) 」
 
 
 ![Tofu](https://telegra.ph/file/eaea4dd33973037ff3bf6.png)
 
 ### ╒═══「 Creator Info/Credits 」
-
-+  [Awesome_Tofu](https://GitHub.com/Awesome-Tofu) : OWNER | DEV
++  [AerodynamicV1Botz](https://GitHub.com/AerodynamicV1Botz) : OWNER | DEV
++  [Awesome_Tofu](https://GitHub.com/Awesome-Tofu) : BASE
 +  [Rajkumar](https://github.com/Awesome-RJ) : BASE
-+  [Hirojazz](https://github.com/Hirojazz) : BASE
-+  [Dank-del](https://github.com/Dank-del) : BASE 
 
 ╘══「 Any other authorship/credits can be seen through the commits. 」
 
-## ╒═══「 Credits 」
-The bot is based of on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
-This repo was just reamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
-
 ### ╒═══「 Support Group 」 
 
-The Support group can be reached out to at [Tofu • Support](https://t.me/tofu_support), where you can ask for help about [Tofu](https://t.me/TofuXrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Support💬](https://t.me/AerodynamicV1_Promotion), where you can ask for help about [AeroXRobot](https://t.me/AeroXrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 <details>
 	<summary>Heroku Deploy</summary>
@@ -80,13 +74,13 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 
 ```console
     ~$ git clone https://github.com/AerodynamicV1Botz/AeroXRobot
-    ~$ cd Tofu-Robot
+    ~$ cd AeroXRobot
     ~$ cp sample_config.py config.py
 ```
 
 Edit Config.py with your own Values
 
-Start with ```python -m TofuXrobot```
+Start with ```python -m AeroXrobot```
 
 </details>    
 
