@@ -72,7 +72,7 @@ buttons = [
                     ],[
                         InlineKeyboardButton(
                              text="[►ChitChat💬◄]",
-                             url="https://t.me/AeroXrobot?startgroup=true"),
+                             url="https://t.me/AerodynamicV1_Promotion"),
                         InlineKeyboardButton(
                              text="[►Update🔔◄]",
                              url="https://t.me/AerodynamicV1_UPDATE"),
