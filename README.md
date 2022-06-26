@@ -17,8 +17,6 @@
 <img src="https://img.shields.io/badge/Pyrogram-1.4.1-red?style=for-the-badge&logo=appveyor" alt="Pyrogram Version">
 <a href="https://github.com/AerodynamicV1Botz/AeroXRobot Robot"> <img src="https://img.shields.io/github/repo-size/AerodynamicV1Botz/AeroXRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
 <div>
-<h1 color="red"> YOU WILL FACE SOME PROBLEM AFTER DEPLOYMENT, I SUGGEST YOU TO DON'T DEPLOY WITH THIS REPO!</h1>
-</div>
 
 ###  ╒═══「 Status 」
 
