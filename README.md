@@ -43,7 +43,21 @@
 
 ### ╒═══「 Support Group 」 
 
-The Support group can be reached out to at [Support💬](https://t.me/AerodynamicV1_Promotion), where you can ask for help about [AeroXRobot](https://t.me/AeroXrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Support💬](https://t.me/AerodynamicV1_Promotion), where you can ask for help about [AeroXRobot](https://t.me/AeroXrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available.
+
+</h3>
+
+<p align="center">
+<a href="https://telegram.me/AerodynamicV1_UPDATE"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+</p>
+
+<p align="center">
+<a href="https://telegram.me/AerodynamicV1_Promotion"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+</p>
+
+<p align="center">
+<a href="https://telegram.me/AerodynamicV1_OFFICIAL"><img src="https://img.shields.io/badge/%20AerodymamicV1-blue.svg?style=for-the-badge&logo=Telegram"></a>
+</p> 
 
 <details>
 	<summary>Heroku Deploy</summary>
