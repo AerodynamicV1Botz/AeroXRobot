@@ -32,7 +32,7 @@
 ╘══「 Can be found on telegram as [AeroXRobot](https://t.me/AeroXrobot) 」
 
 
-![Tofu](https://telegra.ph/file/eaea4dd33973037ff3bf6.png)
+![Tofu](https://telegra.ph//file/2a8e42a346478715b197f.jpg)
 
 ### ╒═══「 Creator Info/Credits 」
 +  [AerodynamicV1Botz](https://GitHub.com/AerodynamicV1Botz) : OWNER | DEV
